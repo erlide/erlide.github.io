@@ -2,62 +2,62 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/</loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>
             http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/
         </loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>
             http://erlide.github.com/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/
         </loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/2013/02/16/started-a-blog/</loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/2013/02/16/development-status/</loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/2013/02/21/architecture/</loc>
-        <lastmod>2013-03-08T16:36:25+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/2013/03/10/problems-at-first-start/</loc>
-        <lastmod>2013-03-10T14:56:44+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:54+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/archives/</loc>
-        <lastmod>2013-03-10T14:56:44+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:55+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/blog/</loc>
-        <lastmod>2013-03-10T14:56:44+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:55+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/community/faq.html</loc>
-        <lastmod>2013-03-08T16:36:26+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:55+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/community/</loc>
-        <lastmod>2013-03-08T16:36:26+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:55+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/</loc>
-        <lastmod>2013-03-10T14:56:44+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:56+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/installation/</loc>
-        <lastmod>2013-03-08T16:36:26+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:56+01:00</lastmod>
     </url>
     <url>
         <loc>http://erlide.github.com/robots.txt</loc>
-        <lastmod>2013-03-08T16:36:26+01:00</lastmod>
+        <lastmod>2013-03-10T15:00:56+01:00</lastmod>
     </url>
 </urlset>
