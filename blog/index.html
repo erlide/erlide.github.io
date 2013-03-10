@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>erlide - erlide - an Erlang IDE</title>
+  <title>erlide - an Erlang IDE</title>
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="Erlide We are proud to announce the latest version that is 0.20.1 and offers the following features: Works with Eclipse 3.6, Java 1.6 and Erlang &hellip;">
+  <meta name="description" content="Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse.
+This can happen when starting for the first time in a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://erlide.org/">
+  <link rel="canonical" href="http://erlide.org/blog/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,138 +84,328 @@ boost programmer efficiency even more.</p>
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
-    <h1 class="entry-title">Erlide</h1>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/10/problems-at-first-start/">Problems at First Start</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-10T14:32:00+01:00" pubdate data-updated="true">10-03-2013</time>
+        
+      </p>
     
   </header>
+
+
+  <div class="entry-content"><p>Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse.
+This can happen when starting for the first time in a workspace and we&#8217;re working to fix it.</p>
+
+<p>Sometimes you can&#8217;t even get to the dialog where the runtimes are configured&#8230; The good news is
+that there is a workaround: in your <code>eclipse.ini</code> file (in the Eclipse directory), add the following
+line at the end:</p>
+
+<pre><code>-Derlide.runtime=/path/to/your/erlang/installation/directory
+</code></pre>
+
+<p>Note that the top Erlang directory should be referenced (<code>$ERL_TOP</code>). This is not needed if your Erlang installation is in a &#8220;standard&#8221; place, like</p>
+
+<ul>
+<li>c:\program files</li>
+<li>c:\program files (x86)</li>
+<li>/usr</li>
+<li>/usr/lib</li>
+<li>/usr/lib64</li>
+<li>/usr/local</li>
+<li>/usr/local/lib</li>
+<li>/Library/Frameworks/erlang/Versions</li>
+</ul>
+
+</div>
   
-  <p>We are proud to announce the latest version that is <strong>0.20.1</strong> and
-	offers the following features:
-	<ul>
-		<li>Works with <strong>Eclipse 3.6, Java 1.6 and Erlang R14B</strong>, or later (including Eclipse 4.x).</li>
-		<li>
-			<h4>Project management</h4>
-			<ul>
-				<li>create project wizard</li>
-				<li>create module with templates (for example gen_server, application)</li>
-				<li>dependencies between projects
-					<ul>
-						<li>defined with in the project properties</li>
-						<li class="planned">understands emake, rebar</li>
-					</ul>
-				</li>
-				<li>configure projects (source directories, test directories, etc)</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Backend management</h4>
-			A backend is an Erlang runtime that can be used by erlide.
-			<ul>
-				<li>define and configure; projects can choose any as baseline</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Editor support</h4>
-			<ul>
-				<li>code syntax highlighting</li>
-				<li>show code structure in outline</li>
-				<li>search and navigation to definition/references of 
-					<ul>
-						<li>modules</li>
-						<li>functions</li>
-						<li>records and record fields</li>
-						<li>macros</li>
-						<li>variables</li>
-					</ul>
-				</li>
-				<li>autocompletion for code elements (same as above)</li>
-				<li class="planned">automated quick fixes for common errors</li>
-				<li>presentation of documentation on hover and in special view</li>
-				<li>from comments and -spec </li><li>for OTP libraries, from the official documentation</li>
-				<li>templates for code constructs, for example &lsquo;case&rsquo;, &lsquo;try&rsquo;, &lsquo;receive&rsquo;, user defined</li>
-				<li class="planned">show places where a function is called from (hierarchically)</li>
-				<li>integration with Wrangler for refactoring support</li>
-				<li>correct indentation of code</li>
-				<li class="planned">pretty-print code</li>
-				<li class="planned">understand parse transforms in the editor</li>
-				<li>edoc exporter (under <code>File &rarr; Export...</code>)</li>
-			</ul>
-		</li>
-		<li>
-			<h3>Compilation</h3>
-			<ul>
-				<li>build project
-					<ul>
-						<li>internal builder uses a dedicated backend</li>
-						<li class="planned">understands emake, rebar</li>
-						<li class="planned">can use external make script</li>
-					</ul>
-				</li>
-				<li>compile just one module</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Running/debugging code</h4>
-			<ul>
-				<li>launch Erlang node with current projects loaded</li>
-				<li>console view with syntax highlighting</li>
-				<li>use Eclipse debugger on the code (stacktrace, current variables, breakpoints); works on remote nodes too</li>
-				<li>&ldquo;live expressions&rdquo;: user defined expressions that are evaluated each time code is changed, making debugging less needed</li>
-				<li class="planned">run tests and show the results (eunit, common test)</li>
-				<li class="sgsn">support for bt_erl</li>
-				<li>configure and display tracing information</li>
-				<li>configure and display coverage information</li>
-				<li class="planned">replay a trace captured from the debugger</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Integration with OTP and third party tools</h4>
-			<ul class="col">
-				<li>debugger</li>
-				<li>dialyzer</li>
-				<li class="planned">observer</li>
-				<li class="planned">pman</li>
-				<li>etop</li>
-				<li class="planned">mnesia table viewer</li>
-				<li>eunit</li>
-				<li class="planned">common test</li>
-				<li>wrangler</li>
-				<li class="planned">refactorErl</li>
-				<li class="sgsn">bt_erl</li>
-				<li class="sgsn">tecsas</li>
-				<li class="planned">rebar</li>
-				<li class="planned">sinan</li>
-			</ul>
-		</li>
-	</ul>
-</p>
-<p>A list of the user-visible changes is in the <a
-		href="http://github.com/erlide/erlide/raw/master/CHANGES"
-		>change log</a>. </p>
+  
 
 
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/21/architecture/">Architecture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-21T08:51:00+01:00" pubdate data-updated="true">21-02-2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve done recently a lot of changes to the plugin structure, which I
+think could be called &#8220;architectural changes&#8221;. The goal is to separate
+the different concerns and make it easier to reason about them and
+test them in isolation.</div>
+  
   
     <footer>
-      
-      
-        <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.org/index.html" data-via="" data-counturl="http://erlide.org/index.html" >Tweet</a>
-  
-  
-  
-</div>
-
-      
+      <a rel="full-article" href="/blog/2013/02/21/architecture/">Read on &rarr;</a>
     </footer>
   
-</article>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/16/development-status/">Development Status</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-16T22:16:00+01:00" pubdate data-updated="true">16-02-2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I thought it would be nice to write a report on what has been going on and what we are doing at the moment.</p>
+
+<p>Since quite a long time ago, we started being hampered in our progress by (basically) the fact that the code
+base has grown organically into a mess. This makes it hard to change without creating follow-up problems and
+it makes it hard/slow to test. So for some year ago I sketched a plan for how to address this.</p>
 
 </div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/16/development-status/">Read on &rarr;</a>
+    </footer>
+  
 
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/16/started-a-blog/">Started a Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-16T12:16:00+01:00" pubdate data-updated="true">16-02-2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have changed the site generation from <a href="http://github.com/mojombo/jekyll">Jekyll</a> to
+<a href="http://octopress.org/">Octopress</a> and decided to start blogging here too. There was
+a blog at Blogger, but it feels better to have it all in one place. I even imported
+a couple of the old entries that feel relevant.</p>
+
+<p>Hopefully I will manage to provide interesting posts a little more often than before :-)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/">Retrieving a Feature&#8217;s Version Number in Eclipse</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-19T00:00:00+02:00" pubdate data-updated="true">19-06-2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I wanted to print in the log my feature&#8217;s version number, but was stumped because features aren&#8217;t OSGi bundles and
+there wasn&#8217;t an obvious way to find them. </div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/">Towards Erlide 2.0: It&#8217;s Not Only About Code</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-08-26T00:00:00+02:00" pubdate data-updated="true">26-08-2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Writing code is of course an important part of the development process. In other languages, it is one of
+the two pillars, the other one being debugging the code. Erlang, however, is different: <em>an Erlang system
+is <strong>alive</strong></em>, and thus it&#8217;s just as important to be able to architect and monitor it.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/03/12/erlide-internals-what-is-a-backend/">Erlide Internals: What Is a Backend?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-12T00:00:00+01:00" pubdate data-updated="true">12-03-2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The term &#8220;backend&#8221; is used often in erlide, but it might be unclear what it really means.</p>
+
+<p>What we call a backend is an Erlang runtime that we&#8217;re connected to via an internal Java node.
+This connection requires some erlide code to be installed and running on the Erlang side.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/03/12/erlide-internals-what-is-a-backend/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
 <aside class="sidebar">
   
     <section>
@@ -259,7 +450,7 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       </li>
     
       <li class="post">
-        <a href="/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/">Retrieving a feature's version number in Eclipse</a>
+        <a href="/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/">Retrieving a feature&#8217;s version number in Eclipse</a>
       </li>
     
   </ul>
@@ -306,7 +497,6 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
 
   
 </aside>
-
 
     </div>
   </div>

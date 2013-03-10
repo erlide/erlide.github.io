@@ -1,0 +1,5 @@
+
+We are in the process of testing "Jekyll":http://wiki.github.com/mojombo/jekyll to generate the project's website. 
+The source will be found here, initially ported from org.erlide.docs/site
+
+

@@ -5,11 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>erlide - erlide - an Erlang IDE</title>
+  <title>community - erlide - an Erlang IDE</title>
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="Erlide We are proud to announce the latest version that is 0.20.1 and offers the following features: Works with Eclipse 3.6, Java 1.6 and Erlang &hellip;">
+  <meta name="description" content="Community FAQ
+Project site
+Mailing lists: erlide-bugs, erlide-devel
+Issue tracker assembla
+RSS feeds
+articles and blog posts Discussion Group
+The &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://erlide.org/">
+  <link rel="canonical" href="http://erlide.org/community/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -87,113 +93,72 @@ boost programmer efficiency even more.</p>
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Erlide</h1>
+    <h1 class="entry-title">Community</h1>
     
   </header>
   
-  <p>We are proud to announce the latest version that is <strong>0.20.1</strong> and
-	offers the following features:
-	<ul>
-		<li>Works with <strong>Eclipse 3.6, Java 1.6 and Erlang R14B</strong>, or later (including Eclipse 4.x).</li>
-		<li>
-			<h4>Project management</h4>
-			<ul>
-				<li>create project wizard</li>
-				<li>create module with templates (for example gen_server, application)</li>
-				<li>dependencies between projects
-					<ul>
-						<li>defined with in the project properties</li>
-						<li class="planned">understands emake, rebar</li>
-					</ul>
-				</li>
-				<li>configure projects (source directories, test directories, etc)</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Backend management</h4>
-			A backend is an Erlang runtime that can be used by erlide.
-			<ul>
-				<li>define and configure; projects can choose any as baseline</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Editor support</h4>
-			<ul>
-				<li>code syntax highlighting</li>
-				<li>show code structure in outline</li>
-				<li>search and navigation to definition/references of 
-					<ul>
-						<li>modules</li>
-						<li>functions</li>
-						<li>records and record fields</li>
-						<li>macros</li>
-						<li>variables</li>
-					</ul>
-				</li>
-				<li>autocompletion for code elements (same as above)</li>
-				<li class="planned">automated quick fixes for common errors</li>
-				<li>presentation of documentation on hover and in special view</li>
-				<li>from comments and -spec </li><li>for OTP libraries, from the official documentation</li>
-				<li>templates for code constructs, for example &lsquo;case&rsquo;, &lsquo;try&rsquo;, &lsquo;receive&rsquo;, user defined</li>
-				<li class="planned">show places where a function is called from (hierarchically)</li>
-				<li>integration with Wrangler for refactoring support</li>
-				<li>correct indentation of code</li>
-				<li class="planned">pretty-print code</li>
-				<li class="planned">understand parse transforms in the editor</li>
-				<li>edoc exporter (under <code>File &rarr; Export...</code>)</li>
-			</ul>
-		</li>
-		<li>
-			<h3>Compilation</h3>
-			<ul>
-				<li>build project
-					<ul>
-						<li>internal builder uses a dedicated backend</li>
-						<li class="planned">understands emake, rebar</li>
-						<li class="planned">can use external make script</li>
-					</ul>
-				</li>
-				<li>compile just one module</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Running/debugging code</h4>
-			<ul>
-				<li>launch Erlang node with current projects loaded</li>
-				<li>console view with syntax highlighting</li>
-				<li>use Eclipse debugger on the code (stacktrace, current variables, breakpoints); works on remote nodes too</li>
-				<li>&ldquo;live expressions&rdquo;: user defined expressions that are evaluated each time code is changed, making debugging less needed</li>
-				<li class="planned">run tests and show the results (eunit, common test)</li>
-				<li class="sgsn">support for bt_erl</li>
-				<li>configure and display tracing information</li>
-				<li>configure and display coverage information</li>
-				<li class="planned">replay a trace captured from the debugger</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Integration with OTP and third party tools</h4>
-			<ul class="col">
-				<li>debugger</li>
-				<li>dialyzer</li>
-				<li class="planned">observer</li>
-				<li class="planned">pman</li>
-				<li>etop</li>
-				<li class="planned">mnesia table viewer</li>
-				<li>eunit</li>
-				<li class="planned">common test</li>
-				<li>wrangler</li>
-				<li class="planned">refactorErl</li>
-				<li class="sgsn">bt_erl</li>
-				<li class="sgsn">tecsas</li>
-				<li class="planned">rebar</li>
-				<li class="planned">sinan</li>
-			</ul>
-		</li>
-	</ul>
-</p>
-<p>A list of the user-visible changes is in the <a
-		href="http://github.com/erlide/erlide/raw/master/CHANGES"
-		>change log</a>. </p>
+  <ul>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="https://github.com/erlide/erlide">Project site</a></li>
+<li>Mailing lists: erlide-bugs, erlide-devel</li>
+<li>Issue tracker assembla</li>
+<li><a href="http://sourceforge.net/export/rss2_project.php?group_id=58889">RSS feeds</a></li>
+<li><p>articles and blog posts</p></li>
+<li><p><div class="media">
+<a href="https://groups.google.com/group/xtend-lang" class="img">
+<img src="/img/icon-discussions-blue.png" alt="image" class="image_left">
+</a>
+<div class="body">
+  <h3>Discussion Group</h3>
+<p>The <strong>Xtend Google Group</strong> is the first source for getting answers in case you got stuck.
+The community is very friendly.
+<br>Please ask any questions clearly and with sufficient information attached.</p>
+</div>
+</div></p></li>
+<li><div class="media">
+  <a href="https://erlide-tools.assembla.com/spaces/erlide/support/tickets" class="img">
+<img src="/img/icon-bug-blue.png" alt="image" class="image_left">
+</a>
+<div class="body">
+<h3>Found a Bug?</h3>
+<p>Bug reports and enhancement request are tracked at <strong>https://erlide-tools.assembla.com/spaces/erlide/support/tickets</strong>.
+Please explain the problem and provide a reduced but reproducable example.
+Also please explain the concrete use case when requesting enhancements.</p>
+</div>
+</div></li>
+</ul>
+
+
+<div class="row">
+    <div class="span9 team">
+    <a href="https://twitter.com/#!/xtendlang" class="anchor-in-div"></a>
+    <div class="row">
+      <div class="span4 ">
+        <img src="/img/icon-twitter-blue.png" alt="image" class="image_left">
+        <h3>Xtend on Twitter</h3>
+        </div>
+        <div class="span5 ">
+            <p>If you are on twitter and want to get notified about all things Xtend, you should consider following <strong>@xtendlang</strong>.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="span9 team">
+    <a href="https://plus.google.com/108502071045096808067/posts" class="anchor-in-div"></a>
+    <div class="row">
+      <div class="span4 ">
+        <img src="/img/icon-google-blue.png" alt="image" class="image_left">
+        <h3>Xtend on Google +</h3>
+        </div>
+        <div class="span5 ">
+            <p>If you don&#8217;t like Twitter but are on Google +. You might want to add Xtend to one of your circles.</p>
+        </div>
+        </div>
+    </div>
+</div>
 
 
   
@@ -202,7 +167,7 @@ boost programmer efficiency even more.</p>
       
         <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.org/index.html" data-via="" data-counturl="http://erlide.org/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.org/community/index.html" data-via="" data-counturl="http://erlide.org/community/index.html" >Tweet</a>
   
   
   
@@ -317,19 +282,6 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'erlide';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

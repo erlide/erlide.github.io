@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='Erlide Test Site'
+    type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1243822502440'/>
+  </properties>
+  <children size='2'>
+    <child location='http://shibumi.erlide.org/updates/beta'/>
+    <child location='http://erlide.sourceforge.net/update_beta_sf'/>
+
+	<child location='http://shibumi.erlide.org/updates/graphviz'/>
+  </children>
+</repository>
