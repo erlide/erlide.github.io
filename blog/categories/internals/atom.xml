@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: internals | erlide - an Erlang IDE]]></title>
-  <link href="http://erlide.org/blog/categories/internals/atom.xml" rel="self"/>
-  <link href="http://erlide.org/"/>
-  <updated>2013-03-10T14:53:30+01:00</updated>
-  <id>http://erlide.org/</id>
+  <link href="http://erlide.github.com/blog/categories/internals/atom.xml" rel="self"/>
+  <link href="http://erlide.github.com/"/>
+  <updated>2013-03-10T14:57:51+01:00</updated>
+  <id>http://erlide.github.com/</id>
   <author>
     <name><![CDATA[The erlide team]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Architecture]]></title>
-    <link href="http://erlide.org/blog/2013/02/21/architecture/"/>
+    <link href="http://erlide.github.com/blog/2013/02/21/architecture/"/>
     <updated>2013-02-21T08:51:00+01:00</updated>
-    <id>http://erlide.org/blog/2013/02/21/architecture</id>
+    <id>http://erlide.github.com/blog/2013/02/21/architecture</id>
     <content type="html"><![CDATA[<p>I've done recently a lot of changes to the plugin structure, which I
 think could be called "architectural changes". The goal is to separate
 the different concerns and make it easier to reason about them and
