@@ -4,7 +4,7 @@
   <title><![CDATA[erlide - an Erlang IDE]]></title>
   <link href="http://erlide.github.com/atom.xml" rel="self"/>
   <link href="http://erlide.github.com/"/>
-  <updated>2013-03-18T22:32:24+01:00</updated>
+  <updated>2013-04-24T17:27:02+02:00</updated>
   <id>http://erlide.github.com/</id>
   <author>
     <name><![CDATA[The erlide team]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ended support for Eclipse 3.6]]></title>
+    <link href="http://erlide.github.com/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/"/>
+    <updated>2013-04-11T09:48:00+02:00</updated>
+    <id>http://erlide.github.com/blog/2013/04/11/ended-support-for-eclipse-3-dot-6</id>
+    <content type="html"><![CDATA[<p>Starting today, we are no longer supporting Eclipse 3.6. The last version that does that is 0.21.0. The new target is 3.7.</p>
+
+<p>If you for some reason must use 3.6 and want to keep updated, please contact us. We could be convinced to revert this decision.</p>
+
+<p>The new version will be available early next week.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Problems at first start]]></title>
