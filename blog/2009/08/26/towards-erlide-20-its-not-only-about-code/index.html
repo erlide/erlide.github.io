@@ -19,30 +19,23 @@ the two pillars, the other one being &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/">
+  <link rel="canonical" href="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="erlide - an Erlang IDE" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+  
+
 </head>
 
 <body   >
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LVD2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-LVD2');</script>
-<!-- End Google Tag Manager -->
-
   <header role="banner">  <hgroup>
   <div id="logo">
   	<h1><a href="/"><span class="logo"><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a></h1>
@@ -114,16 +107,16 @@ boost programmer efficiency even more.</p>
 
 <div class="entry-content"><p>Writing code is of course an important part of the development process. In other languages, it is one of
 the two pillars, the other one being debugging the code. Erlang, however, is different: <em>an Erlang system
-is <strong>alive</strong></em>, and thus it&#8217;s just as important to be able to architect and monitor it.</p>
+is <strong>alive</strong></em>, and thus it&rsquo;s just as important to be able to architect and monitor it.</p>
 
 <!-- more -->
 
 
 <p>Of course these activities could be placed under the two other categories, but I dare to claim that they
-are sufficiently different from &#8220;normal&#8221; coding and &#8220;normal&#8221; debugging that they can stand on their own.</p>
+are sufficiently different from &ldquo;normal&rdquo; coding and &ldquo;normal&rdquo; debugging that they can stand on their own.</p>
 
-<p>&#8220;What&#8217;s the fuss about? We have that already!&#8221; I hear someone mutter there in the back. Um, yes, but
-there&#8217;s always room for improvement. There are no tools to help with the architecture of the system
+<p>&ldquo;What&rsquo;s the fuss about? We have that already!&rdquo; I hear someone mutter there in the back. Um, yes, but
+there&rsquo;s always room for improvement. There are no tools to help with the architecture of the system
 and there are almost none to watch it running. Here are some examples:</p>
 
 <ul>
@@ -133,15 +126,15 @@ link to another process, mark the process as trapping exits, and so on. This wou
 into the appropriate code modules.</li>
 <li>freeze execution of all application processes and inspect them without fearing that timeouts will kill
 them</li>
-<li>&#8220;sandboxes&#8221; for processes, allowing all to be killed and the application restarted without affecting
+<li>&ldquo;sandboxes&rdquo; for processes, allowing all to be killed and the application restarted without affecting
 unrelated processes</li>
 <li>trace messages live, at full or reduced speed or step-by-step. This could also be done offline, from
-the logs, but then the processes&#8217; data can&#8217;t be accessed.</li>
+the logs, but then the processes&#8217; data can&rsquo;t be accessed.</li>
 </ul>
 
 
 <p>Some of these features require extensive support from the VM, so it becomes a matter of how useful these
-tools will prove themselves at paying customer&#8217;s site. Which is difficult to find out before having a tool
+tools will prove themselves at paying customer&rsquo;s site. Which is difficult to find out before having a tool
 to test, but I am hopeful that there will be a way out of the deadlock (maybe we can build a good enough
 tool without VM support to use as demo).</p>
 
@@ -177,7 +170,7 @@ tooling than from the usual coding and debugging support.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/" data-via="" data-counturl="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/" data-via="" data-counturl="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/" >Tweet</a>
   
   
   
@@ -225,11 +218,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended support for Eclipse 3.6</a>
+        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended Support for Eclipse 3.6</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at first start</a>
+        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at First Start</a>
       </li>
     
       <li class="post">
@@ -237,11 +230,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/development-status/">Development status</a>
+        <a href="/blog/2013/02/16/development-status/">Development Status</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/started-a-blog/">Started a blog</a>
+        <a href="/blog/2013/02/16/started-a-blog/">Started a Blog</a>
       </li>
     
   </ul>
@@ -324,7 +317,7 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

@@ -18,30 +18,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://erlide.github.com/blog/2013/02/16/development-status/">
+  <link rel="canonical" href="http://erlide.github.com/blog/2013/02/16/development-status">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="erlide - an Erlang IDE" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+  
+
 </head>
 
 <body   >
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LVD2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-LVD2');</script>
-<!-- End Google Tag Manager -->
-
   <header role="banner">  <hgroup>
   <div id="logo">
   	<h1><a href="/"><span class="logo"><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a></h1>
@@ -125,14 +118,14 @@ framework for developing language support (<a href="http://xtext.org">xtext.org<
 we discovered that there were performance problems for large projects (which our main user base has). These
 problems we could not solve right away and we decided to wait and see how Xtext evolves.</p>
 
-<p>We returned to the &#8220;old&#8221; codebase and started to implement the changes needed to make it easier to
+<p>We returned to the &ldquo;old&rdquo; codebase and started to implement the changes needed to make it easier to
 understand, less fragile and more testable. This is an ongoing process and it will be quite dramatic. If
 anyone is keeping track of the code, the most visible thing happening is that there are several new plugins.
 Code is getting moved from one plugin to another and we might even split up the wrangler, cover and trace
 features into their own repositories. This will mess up the git history a bit, but it is necessary.</p>
 
 <p>The vision is that when we are ready, we will have all the core functionality nicely packaged and independent
-of Eclipse, hopefully implemented completely in Erlang. There&#8217;s a long way there, though.</p>
+of Eclipse, hopefully implemented completely in Erlang. There&rsquo;s a long way there, though.</p>
 
 <p>Some highlights of the current state of affairs:</p>
 
@@ -141,7 +134,7 @@ of Eclipse, hopefully implemented completely in Erlang. There&#8217;s a long way
 crash. From version 0.19 you should see a much stabler application</li>
 <li>we are soon going to set Eclipse 3.7 as the minimum supported base</li>
 <li>we have support for R16</li>
-<li>in the nearest timeframe there won&#8217;t be many new features, but we focus on fixing bugs and improving
+<li>in the nearest timeframe there won&rsquo;t be many new features, but we focus on fixing bugs and improving
 stability and testability of the code base</li>
 </ul>
 
@@ -175,7 +168,7 @@ stability and testability of the code base</li>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2013/02/16/development-status/" data-via="" data-counturl="http://erlide.github.com/blog/2013/02/16/development-status/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2013/02/16/development-status/" data-via="" data-counturl="http://erlide.github.com/blog/2013/02/16/development-status/" >Tweet</a>
   
   
   
@@ -229,11 +222,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended support for Eclipse 3.6</a>
+        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended Support for Eclipse 3.6</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at first start</a>
+        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at First Start</a>
       </li>
     
       <li class="post">
@@ -241,11 +234,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/development-status/">Development status</a>
+        <a href="/blog/2013/02/16/development-status/">Development Status</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/started-a-blog/">Started a blog</a>
+        <a href="/blog/2013/02/16/started-a-blog/">Started a Blog</a>
       </li>
     
   </ul>
@@ -331,7 +324,7 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

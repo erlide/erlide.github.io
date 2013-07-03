@@ -4,7 +4,7 @@
   <title><![CDATA[Category: internals | erlide - an Erlang IDE]]></title>
   <link href="http://erlide.github.com/blog/categories/internals/atom.xml" rel="self"/>
   <link href="http://erlide.github.com/"/>
-  <updated>2013-07-02T18:14:52+02:00</updated>
+  <updated>2013-07-03T09:29:56+02:00</updated>
   <id>http://erlide.github.com/</id>
   <author>
     <name><![CDATA[The erlide team]]></name>
@@ -18,8 +18,8 @@
     <link href="http://erlide.github.com/blog/2013/02/21/architecture/"/>
     <updated>2013-02-21T08:51:00+01:00</updated>
     <id>http://erlide.github.com/blog/2013/02/21/architecture</id>
-    <content type="html"><![CDATA[<p>I've done recently a lot of changes to the plugin structure, which I
-think could be called "architectural changes". The goal is to separate
+    <content type="html"><![CDATA[<p>I&rsquo;ve done recently a lot of changes to the plugin structure, which I
+think could be called &ldquo;architectural changes&rdquo;. The goal is to separate
 the different concerns and make it easier to reason about them and
 test them in isolation.<!--more--></p>
 
@@ -39,7 +39,7 @@ eclipse-based APIs: <code>util_eclipse</code>, <code>backend</code>, <code>core<
 
 <p>The <code>runtime</code>/<code>backend</code> plugins handle starting and connecting to
 Erlang nodes, to be used either internally or to execute/debug the
-user's code.</p>
+user&rsquo;s code.</p>
 
 <p>The <code>model</code> is where all the interesting stuff happens. It keeps track
 of the structure of projects and modules and will provide an API to

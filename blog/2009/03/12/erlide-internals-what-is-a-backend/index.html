@@ -9,7 +9,7 @@
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="The term &#8220;backend&#8221; is used often in erlide, but it might be unclear what it really means. What we call a backend is an Erlang runtime &hellip;">
+  <meta name="description" content="The term &ldquo;backend&rdquo; is used often in erlide, but it might be unclear what it really means. What we call a backend is an Erlang runtime &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,30 +18,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/">
+  <link rel="canonical" href="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="erlide - an Erlang IDE" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+  
+
 </head>
 
 <body   >
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LVD2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-LVD2');</script>
-<!-- End Google Tag Manager -->
-
   <header role="banner">  <hgroup>
   <div id="logo">
   	<h1><a href="/"><span class="logo"><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a></h1>
@@ -111,9 +104,9 @@ boost programmer efficiency even more.</p>
   </header>
 
 
-<div class="entry-content"><p>The term &#8220;backend&#8221; is used often in erlide, but it might be unclear what it really means.</p>
+<div class="entry-content"><p>The term &ldquo;backend&rdquo; is used often in erlide, but it might be unclear what it really means.</p>
 
-<p>What we call a backend is an Erlang runtime that we&#8217;re connected to via an internal Java node.
+<p>What we call a backend is an Erlang runtime that we&rsquo;re connected to via an internal Java node.
 This connection requires some erlide code to be installed and running on the Erlang side.</p>
 
 <!-- more -->
@@ -166,7 +159,7 @@ newer versions available.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/" data-via="" data-counturl="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/" data-via="" data-counturl="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/" >Tweet</a>
   
   
   
@@ -212,11 +205,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended support for Eclipse 3.6</a>
+        <a href="/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/">Ended Support for Eclipse 3.6</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at first start</a>
+        <a href="/blog/2013/03/10/problems-at-first-start/">Problems at First Start</a>
       </li>
     
       <li class="post">
@@ -224,11 +217,11 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/development-status/">Development status</a>
+        <a href="/blog/2013/02/16/development-status/">Development Status</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/02/16/started-a-blog/">Started a blog</a>
+        <a href="/blog/2013/02/16/started-a-blog/">Started a Blog</a>
       </li>
     
   </ul>
@@ -311,7 +304,7 @@ src='http://marketplace.eclipse.org/misc/installbutton.png' alt="Install it"/></
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
