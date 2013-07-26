@@ -90,113 +90,137 @@ boost programmer efficiency even more.</p>
     
   </header>
   
-  <p>We are proud to announce the latest version <strong><script type="text/javascript"
-        src="http://ci.erlide.org/view/Vlad/job/master/lastSuccessfulBuild/artifact/version">
-</script></strong> and
+  <p>
+	We are proud to announce the latest version <strong><script type="text/javascript"
+        src="http://ci.erlide.org/view/Vlad/job/master/lastSuccessfulBuild/artifact/version"></script></strong> 
+	and
 	offers the following features:
-	<ul>
-		<li>Works with <strong>Eclipse 3.6, Java 1.6 and Erlang R14B</strong>, or later (including Eclipse 4.x).</li>
-		<li>
-			<h4>Project management</h4>
-			<ul>
-				<li>create project wizard</li>
-				<li>create module with templates (for example gen_server, application)</li>
-				<li>dependencies between projects
-					<ul>
-						<li>defined with in the project properties</li>
-						<li class="planned">understands emake, rebar</li>
-					</ul>
-				</li>
-				<li>configure projects (source directories, test directories, etc)</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Backend management</h4>
-			A backend is an Erlang runtime that can be used by erlide.
-			<ul>
-				<li>define and configure; projects can choose any as baseline</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Editor support</h4>
-			<ul>
-				<li>code syntax highlighting</li>
-				<li>show code structure in outline</li>
-				<li>search and navigation to definition/references of 
-					<ul>
-						<li>modules</li>
-						<li>functions</li>
-						<li>records and record fields</li>
-						<li>macros</li>
-						<li>variables</li>
-					</ul>
-				</li>
-				<li>autocompletion for code elements (same as above)</li>
-				<li class="planned">automated quick fixes for common errors</li>
-				<li>presentation of documentation on hover and in special view</li>
-				<li>from comments and -spec </li><li>for OTP libraries, from the official documentation</li>
-				<li>templates for code constructs, for example &lsquo;case&rsquo;, &lsquo;try&rsquo;, &lsquo;receive&rsquo;, user defined</li>
-				<li class="planned">show places where a function is called from (hierarchically)</li>
-				<li>integration with Wrangler for refactoring support</li>
-				<li>correct indentation of code</li>
-				<li class="planned">pretty-print code</li>
-				<li class="planned">understand parse transforms in the editor</li>
-				<li>edoc exporter (under <code>File &rarr; Export...</code>)</li>
-			</ul>
-		</li>
-		<li>
-			<h3>Compilation</h3>
-			<ul>
-				<li>build project
-					<ul>
-						<li>internal builder uses a dedicated backend</li>
-						<li class="planned">understands emake, rebar</li>
-						<li class="planned">can use external make script</li>
-					</ul>
-				</li>
-				<li>compile just one module</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Running/debugging code</h4>
-			<ul>
-				<li>launch Erlang node with current projects loaded</li>
-				<li>console view with syntax highlighting</li>
-				<li>use Eclipse debugger on the code (stacktrace, current variables, breakpoints); works on remote nodes too</li>
-				<li>&ldquo;live expressions&rdquo;: user defined expressions that are evaluated each time code is changed, making debugging less needed</li>
-				<li class="planned">run tests and show the results (eunit, common test)</li>
-				<li class="sgsn">support for bt_erl</li>
-				<li>configure and display tracing information</li>
-				<li>configure and display coverage information</li>
-				<li class="planned">replay a trace captured from the debugger</li>
-			</ul>
-		</li>
-		<li>
-			<h4>Integration with OTP and third party tools</h4>
-			<ul class="col">
-				<li>debugger</li>
-				<li>dialyzer</li>
-				<li class="planned">observer</li>
-				<li class="planned">pman</li>
-				<li>etop</li>
-				<li class="planned">mnesia table viewer</li>
-				<li>eunit</li>
-				<li class="planned">common test</li>
-				<li>wrangler</li>
-				<li class="planned">refactorErl</li>
-				<li class="sgsn">bt_erl</li>
-				<li class="sgsn">tecsas</li>
-				<li class="planned">rebar</li>
-				<li class="planned">sinan</li>
-			</ul>
-		</li>
-	</ul>
 </p>
-<p>A list of the user-visible changes is in the <a
+<ul>
+	<li>
+		Works with <strong>Eclipse 3.6, Java 1.6 and Erlang R14B</strong>
+		, or later (including Eclipse 4.x).
+	</li>
+	<li>
+		<h4>Project management</h4>
+		<ul>
+			<li>create project wizard</li>
+			<li>
+				create module with templates (for example gen_server, application)
+			</li>
+			<li>
+				dependencies between projects
+				<ul>
+					<li>defined with in the project properties</li>
+					<li class="planned">understands emake, rebar</li>
+				</ul>
+			</li>
+			<li>
+				configure projects (source directories, test directories, etc)
+			</li>
+		</ul>
+	</li>
+	<li>
+		<h4>Backend management</h4>
+		A backend is an Erlang runtime that can be used by erlide.
+		<ul>
+			<li>define and configure; projects can choose any as baseline</li>
+		</ul>
+	</li>
+	<li>
+		<h4>Editor support</h4>
+		<ul>
+			<li>code syntax highlighting</li>
+			<li>show code structure in outline</li>
+			<li>
+				search and navigation to definition/references of
+				<ul>
+					<li>modules</li>
+					<li>functions</li>
+					<li>records and record fields</li>
+					<li>macros</li>
+					<li>variables</li>
+				</ul>
+			</li>
+			<li>autocompletion for code elements (same as above)</li>
+			<li class="planned">automated quick fixes for common errors</li>
+			<li>presentation of documentation on hover and in special view</li>
+			<li>from comments and -spec</li>
+			<li>for OTP libraries, from the official documentation</li>
+			<li>
+				templates for code constructs, for example &lsquo;case&rsquo;, &lsquo;try&rsquo;, &lsquo;receive&rsquo;, user defined
+			</li>
+			<li class="planned">show places where a function is called from (hierarchically)</li>
+			<li>integration with Wrangler for refactoring support</li>
+			<li>correct indentation of code</li>
+			<li class="planned">pretty-print code</li>
+			<li class="planned">understand parse transforms in the editor</li>
+			<li>
+				edoc exporter (under
+				<code>File &rarr; Export...</code>
+				)
+			</li>
+		</ul>
+	</li>
+	<li>
+		<h3>Compilation</h3>
+		<ul>
+			<li>
+				build project
+				<ul>
+					<li>internal builder uses a dedicated backend</li>
+					<li class="planned">understands emake, rebar</li>
+					<li class="planned">can use external make script</li>
+				</ul>
+			</li>
+			<li>compile just one module</li>
+		</ul>
+	</li>
+	<li>
+		<h4>Running/debugging code</h4>
+		<ul>
+			<li>launch Erlang node with current projects loaded</li>
+			<li>console view with syntax highlighting</li>
+			<li>
+				use Eclipse debugger on the code (stacktrace, current variables, breakpoints); works on remote nodes too
+			</li>
+			<li>
+				&ldquo;live expressions&rdquo;: user defined expressions that are evaluated each time code is changed, making debugging less needed
+			</li>
+			<li class="planned">run tests and show the results (eunit, common test)</li>
+			<li class="sgsn">support for bt_erl</li>
+			<li>configure and display tracing information</li>
+			<li>configure and display coverage information</li>
+			<li class="planned">replay a trace captured from the debugger</li>
+		</ul>
+	</li>
+	<li>
+		<h4>Integration with OTP and third party tools</h4>
+		<ul class="col">
+			<li>debugger</li>
+			<li>dialyzer</li>
+			<li class="planned">observer</li>
+			<li class="planned">pman</li>
+			<li>etop</li>
+			<li class="planned">mnesia table viewer</li>
+			<li>eunit</li>
+			<li class="planned">common test</li>
+			<li>wrangler</li>
+			<li class="planned">refactorErl</li>
+			<li class="sgsn">bt_erl</li>
+			<li class="sgsn">tecsas</li>
+			<li class="planned">rebar</li>
+			<li class="planned">sinan</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	A list of the user-visible changes is in the
+	<a
 		href="http://github.com/erlide/erlide/raw/master/CHANGES"
-		>change log</a>. </p>
-
-
+		>change log</a>
+	.
+</p>
   
     <footer>
       
