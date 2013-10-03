@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[erlide - an Erlang IDE]]></title>
-  <link href="http://erlide.github.com/atom.xml" rel="self"/>
-  <link href="http://erlide.github.com/"/>
-  <updated>2013-09-03T18:30:09+02:00</updated>
-  <id>http://erlide.github.com/</id>
+  <link href="http://erlide.org/atom.xml" rel="self"/>
+  <link href="http://erlide.org/"/>
+  <updated>2013-10-03T20:00:48+02:00</updated>
+  <id>http://erlide.org/</id>
   <author>
     <name><![CDATA[The erlide team]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ended support for Eclipse 3.6]]></title>
-    <link href="http://erlide.github.com/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/"/>
+    <link href="http://erlide.org/blog/2013/04/11/ended-support-for-eclipse-3-dot-6/"/>
     <updated>2013-04-11T09:48:00+02:00</updated>
-    <id>http://erlide.github.com/blog/2013/04/11/ended-support-for-eclipse-3-dot-6</id>
+    <id>http://erlide.org/blog/2013/04/11/ended-support-for-eclipse-3-dot-6</id>
     <content type="html"><![CDATA[<p>Starting today, we are no longer supporting Eclipse 3.6. The last version that does that is 0.21.0. The new target is 3.7.</p>
 
 <p>If you for some reason must use 3.6 and want to keep updated, please contact us. We could be convinced to revert this decision.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Problems at first start]]></title>
-    <link href="http://erlide.github.com/blog/2013/03/10/problems-at-first-start/"/>
+    <link href="http://erlide.org/blog/2013/03/10/problems-at-first-start/"/>
     <updated>2013-03-10T14:32:00+01:00</updated>
-    <id>http://erlide.github.com/blog/2013/03/10/problems-at-first-start</id>
+    <id>http://erlide.org/blog/2013/03/10/problems-at-first-start</id>
     <content type="html"><![CDATA[<p>Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse.
 This can happen when starting for the first time in a workspace and we&rsquo;re working to fix it.</p>
 
@@ -62,9 +62,9 @@ line at the end:</p>
   
   <entry>
     <title type="html"><![CDATA[Architecture]]></title>
-    <link href="http://erlide.github.com/blog/2013/02/21/architecture/"/>
+    <link href="http://erlide.org/blog/2013/02/21/architecture/"/>
     <updated>2013-02-21T08:51:00+01:00</updated>
-    <id>http://erlide.github.com/blog/2013/02/21/architecture</id>
+    <id>http://erlide.org/blog/2013/02/21/architecture</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve done recently a lot of changes to the plugin structure, which I
 think could be called &ldquo;architectural changes&rdquo;. The goal is to separate
 the different concerns and make it easier to reason about them and
@@ -106,9 +106,9 @@ this part will be quite language-independent.</p>
   
   <entry>
     <title type="html"><![CDATA[Development status]]></title>
-    <link href="http://erlide.github.com/blog/2013/02/16/development-status/"/>
+    <link href="http://erlide.org/blog/2013/02/16/development-status/"/>
     <updated>2013-02-16T22:16:00+01:00</updated>
-    <id>http://erlide.github.com/blog/2013/02/16/development-status</id>
+    <id>http://erlide.org/blog/2013/02/16/development-status</id>
     <content type="html"><![CDATA[<p>I thought it would be nice to write a report on what has been going on and what we are doing at the moment.</p>
 
 <p>Since quite a long time ago, we started being hampered in our progress by (basically) the fact that the code
@@ -148,9 +148,9 @@ stability and testability of the code base</li>
   
   <entry>
     <title type="html"><![CDATA[Started a blog]]></title>
-    <link href="http://erlide.github.com/blog/2013/02/16/started-a-blog/"/>
+    <link href="http://erlide.org/blog/2013/02/16/started-a-blog/"/>
     <updated>2013-02-16T12:16:00+01:00</updated>
-    <id>http://erlide.github.com/blog/2013/02/16/started-a-blog</id>
+    <id>http://erlide.org/blog/2013/02/16/started-a-blog</id>
     <content type="html"><![CDATA[<p>I have changed the site generation from <a href="http://github.com/mojombo/jekyll">Jekyll</a> to
 <a href="http://octopress.org/">Octopress</a> and decided to start blogging here too. There was
 a blog at Blogger, but it feels better to have it all in one place. I even imported
@@ -162,9 +162,9 @@ a couple of the old entries that feel relevant.</p>
   
   <entry>
     <title type="html"><![CDATA[Retrieving a feature's version number in Eclipse]]></title>
-    <link href="http://erlide.github.com/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/"/>
+    <link href="http://erlide.org/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse/"/>
     <updated>2010-06-19T00:00:00+02:00</updated>
-    <id>http://erlide.github.com/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse</id>
+    <id>http://erlide.org/blog/2010/06/19/retrieving-a-features-version-number-in-eclipse</id>
     <content type="html"><![CDATA[<p>I wanted to print in the log my feature&rsquo;s version number, but was stumped because features aren&rsquo;t OSGi bundles and
 there wasn&rsquo;t an obvious way to find them. <!-- more --> After realizing that the <code>About</code> dialog displays the features, I looked
 at its code and extracted this snippet:</p>
@@ -200,9 +200,9 @@ at its code and extracted this snippet:</p>
   
   <entry>
     <title type="html"><![CDATA[Towards erlide 2.0: it's not only about code]]></title>
-    <link href="http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/"/>
+    <link href="http://erlide.org/blog/2009/08/26/towards-erlide-20-its-not-only-about-code/"/>
     <updated>2009-08-26T00:00:00+02:00</updated>
-    <id>http://erlide.github.com/blog/2009/08/26/towards-erlide-20-its-not-only-about-code</id>
+    <id>http://erlide.org/blog/2009/08/26/towards-erlide-20-its-not-only-about-code</id>
     <content type="html"><![CDATA[<p>Writing code is of course an important part of the development process. In other languages, it is one of
 the two pillars, the other one being debugging the code. Erlang, however, is different: <em>an Erlang system
 is <strong>alive</strong></em>, and thus it&rsquo;s just as important to be able to architect and monitor it.</p>
@@ -243,9 +243,9 @@ tooling than from the usual coding and debugging support.</p>
   
   <entry>
     <title type="html"><![CDATA[erlide internals: What is a backend?]]></title>
-    <link href="http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend/"/>
+    <link href="http://erlide.org/blog/2009/03/12/erlide-internals-what-is-a-backend/"/>
     <updated>2009-03-12T00:00:00+01:00</updated>
-    <id>http://erlide.github.com/blog/2009/03/12/erlide-internals-what-is-a-backend</id>
+    <id>http://erlide.org/blog/2009/03/12/erlide-internals-what-is-a-backend</id>
     <content type="html"><![CDATA[<p>The term &ldquo;backend&rdquo; is used often in erlide, but it might be unclear what it really means.</p>
 
 <p>What we call a backend is an Erlang runtime that we&rsquo;re connected to via an internal Java node.

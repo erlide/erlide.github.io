@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://erlide.github.com/sitemap.xml 
+Sitemap: http://erlide.org/sitemap.xml 
