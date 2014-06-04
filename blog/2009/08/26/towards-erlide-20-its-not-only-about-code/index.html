@@ -9,8 +9,7 @@
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="Writing code is of course an important part of the development process. In other languages, it is one of
-the two pillars, the other one being &hellip;">
+  <meta name="description" content="Writing code is of course an important part of the development process. In other languages, it is one of the two pillars, the other one being &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -111,42 +110,25 @@ boost programmer efficiency even more.</p>
   </header>
 
 
-<div class="entry-content"><p>Writing code is of course an important part of the development process. In other languages, it is one of
-the two pillars, the other one being debugging the code. Erlang, however, is different: <em>an Erlang system
-is <strong>alive</strong></em>, and thus it&rsquo;s just as important to be able to architect and monitor it.</p>
+<div class="entry-content"><p>Writing code is of course an important part of the development process. In other languages, it is one of the two pillars, the other one being debugging the code. Erlang, however, is different: <em>an Erlang system is <strong>alive</strong></em>, and thus it&#8217;s just as important to be able to architect and monitor it. <!-- more --></p>
 
-<!-- more -->
+<p>Of course these activities could be placed under the two other categories, but I dare to claim that they are sufficiently different from &#8220;normal&#8221; coding and &#8220;normal&#8221; debugging that they can stand on their own.</p>
 
-
-<p>Of course these activities could be placed under the two other categories, but I dare to claim that they
-are sufficiently different from &ldquo;normal&rdquo; coding and &ldquo;normal&rdquo; debugging that they can stand on their own.</p>
-
-<p>&ldquo;What&rsquo;s the fuss about? We have that already!&rdquo; I hear someone mutter there in the back. Um, yes, but
-there&rsquo;s always room for improvement. There are no tools to help with the architecture of the system
-and there are almost none to watch it running. Here are some examples:</p>
+<p>&#8220;What&#8217;s the fuss about? We have that already!&#8221; I hear someone mutter there in the back. Um, yes, but there&#8217;s always room for improvement. There are no tools to help with the architecture of the system and there are almost none to watch it running. Here are some examples:</p>
 
 <ul>
-<li>visualize and edit the supervisor structure as well as the links and monitors between processes. With
-a graphical tool, I mean something like right click and add a child, drag and drop from it to create a
-link to another process, mark the process as trapping exits, and so on. This would of course get saved
-into the appropriate code modules.</li>
-<li>freeze execution of all application processes and inspect them without fearing that timeouts will kill
-them</li>
-<li>&ldquo;sandboxes&rdquo; for processes, allowing all to be killed and the application restarted without affecting
-unrelated processes</li>
-<li>trace messages live, at full or reduced speed or step-by-step. This could also be done offline, from
-the logs, but then the processes&#8217; data can&rsquo;t be accessed.</li>
+<li>visualize and edit the supervisor structure as well as the links and monitors between processes. With a graphical tool, I mean something like right click and add a child, drag and drop from it to create a link to another process, mark the process as trapping exits, and so on. This would of course get saved into the appropriate code modules.</li>
+
+<li>freeze execution of all application processes and inspect them without fearing that timeouts will kill them</li>
+
+<li>&#8220;sandboxes&#8221; for processes, allowing all to be killed and the application restarted without affecting unrelated processes</li>
+
+<li>trace messages live, at full or reduced speed or step-by-step. This could also be done offline, from the logs, but then the processes&#8217; data can&#8217;t be accessed.</li>
 </ul>
 
+<p>Some of these features require extensive support from the VM, so it becomes a matter of how useful these tools will prove themselves at paying customer&#8217;s site. Which is difficult to find out before having a tool to test, but I am hopeful that there will be a way out of the deadlock (maybe we can build a good enough tool without VM support to use as demo).</p>
 
-<p>Some of these features require extensive support from the VM, so it becomes a matter of how useful these
-tools will prove themselves at paying customer&rsquo;s site. Which is difficult to find out before having a tool
-to test, but I am hopeful that there will be a way out of the deadlock (maybe we can build a good enough
-tool without VM support to use as demo).</p>
-
-<p>I will explore this path further, I think we can get more developer productivity gains from this kind of
-tooling than from the usual coding and debugging support.</p>
-</div>
+<p>I will explore this path further, I think we can get more developer productivity gains from this kind of tooling than from the usual coding and debugging support.</p></div>
 
 
   <footer>

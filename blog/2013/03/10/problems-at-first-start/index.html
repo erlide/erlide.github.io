@@ -9,8 +9,7 @@
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse.
-This can happen when starting for the first time in a &hellip;">
+  <meta name="description" content="Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse. This can happen when starting for the first time in a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -111,33 +110,31 @@ boost programmer efficiency even more.</p>
   </header>
 
 
-<div class="entry-content"><p>Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse.
-This can happen when starting for the first time in a workspace and we&rsquo;re working to fix it.</p>
+<div class="entry-content"><p>Erlide requires a functioning Erlang runtime, or it crashes and/or hangs the whole Eclipse. This can happen when starting for the first time in a workspace and we&#8217;re working to fix it.</p>
 
-<p>Sometimes you can&rsquo;t even get to the dialog where the runtimes are configured&hellip; The good news is
-that there is a workaround: in your <code>eclipse.ini</code> file (in the Eclipse directory), add the following
-line at the end:</p>
+<p>Sometimes you can&#8217;t even get to the dialog where the runtimes are configured&#8230; The good news is that there is a workaround: in your <code>eclipse.ini</code> file (in the Eclipse directory), add the following line at the end:</p>
 
-<pre><code>-Derlide.runtime=/path/to/your/erlang/installation/directory
-</code></pre>
-
+<pre><code>-Derlide.runtime=/path/to/your/erlang/installation/directory</code></pre>
 <!--more-->
-
-
-<p>Note that the top Erlang directory should be referenced (<code>$ERL_TOP</code>). This is not needed if your Erlang installation is in a &ldquo;standard&rdquo; place, like</p>
+<p>Note that the top Erlang directory should be referenced (<code>$ERL_TOP</code>). This is not needed if your Erlang installation is in a &#8220;standard&#8221; place, like</p>
 
 <ul>
 <li>c:\program files</li>
-<li>c:\program files (x86)</li>
-<li>/usr</li>
-<li>/usr/lib</li>
-<li>/usr/lib64</li>
-<li>/usr/local</li>
-<li>/usr/local/lib</li>
-<li>/Library/Frameworks/erlang/Versions</li>
-</ul>
 
-</div>
+<li>c:\program files (x86)</li>
+
+<li>/usr</li>
+
+<li>/usr/lib</li>
+
+<li>/usr/lib64</li>
+
+<li>/usr/local</li>
+
+<li>/usr/local/lib</li>
+
+<li>/Library/Frameworks/erlang/Versions</li>
+</ul></div>
 
 
   <footer>

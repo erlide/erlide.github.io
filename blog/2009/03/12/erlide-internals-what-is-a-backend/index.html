@@ -9,7 +9,7 @@
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="The term &ldquo;backend&rdquo; is used often in erlide, but it might be unclear what it really means. What we call a backend is an Erlang runtime &hellip;">
+  <meta name="description" content="The term &#8220;backend&#8221; is used often in erlide, but it might be unclear what it really means. What we call a backend is an Erlang runtime &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -110,32 +110,23 @@ boost programmer efficiency even more.</p>
   </header>
 
 
-<div class="entry-content"><p>The term &ldquo;backend&rdquo; is used often in erlide, but it might be unclear what it really means.</p>
+<div class="entry-content"><p>The term &#8220;backend&#8221; is used often in erlide, but it might be unclear what it really means.</p>
 
-<p>What we call a backend is an Erlang runtime that we&rsquo;re connected to via an internal Java node.
-This connection requires some erlide code to be installed and running on the Erlang side.</p>
+<p>What we call a backend is an Erlang runtime that we&#8217;re connected to via an internal Java node. This connection requires some erlide code to be installed and running on the Erlang side. <!-- more --></p>
 
-<!-- more -->
-
-
-<p>There are two kinds of backends: <em>managed</em> and <em>standalone</em>. Managed ones have their lifecycle
-controlled by erlide. Standalone ones use already started erlang nodes.</p>
+<p>There are two kinds of backends: <em>managed</em> and <em>standalone</em>. Managed ones have their lifecycle controlled by erlide. Standalone ones use already started erlang nodes.</p>
 
 <p>Inside erlide, backends are used for several purposes:</p>
 
 <ul>
 <li>for the IDE internals: scanning, parsing, etc. This is always a managed backend.</li>
+
 <li>for compiling code</li>
+
 <li>for running and debugging the applications</li>
 </ul>
 
-
-<p>There are several reasons for having them separated. One is to isolate functionality (especially
-in early erlide versions, it was easy to have the IDE hang for some crash in the builder, or the
-other way around). Another is that one might want to run the IDE on the latest and greatest
-Erlang version, but compile the project for some older version, while still testing it on all
-newer versions available.</p>
-</div>
+<p>There are several reasons for having them separated. One is to isolate functionality (especially in early erlide versions, it was easy to have the IDE hang for some crash in the builder, or the other way around). Another is that one might want to run the IDE on the latest and greatest Erlang version, but compile the project for some older version, while still testing it on all newer versions available.</p></div>
 
 
   <footer>

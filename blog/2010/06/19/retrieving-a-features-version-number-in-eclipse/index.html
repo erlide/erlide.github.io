@@ -9,8 +9,7 @@
   <meta name="author" content="The erlide team">
 
   
-  <meta name="description" content="I wanted to print in the log my feature&rsquo;s version number, but was stumped because features aren&rsquo;t OSGi bundles and
-there wasn&rsquo;t an &hellip;">
+  <meta name="description" content="I wanted to print in the log my feature&#8217;s version number, but was stumped because features aren&#8217;t OSGi bundles and there wasn&#8217;t an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -111,11 +110,8 @@ boost programmer efficiency even more.</p>
   </header>
 
 
-<div class="entry-content"><p>I wanted to print in the log my feature&rsquo;s version number, but was stumped because features aren&rsquo;t OSGi bundles and
-there wasn&rsquo;t an obvious way to find them. <!-- more --> After realizing that the <code>About</code> dialog displays the features, I looked
-at its code and extracted this snippet:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class="entry-content"><p>I wanted to print in the log my feature&#8217;s version number, but was stumped because features aren&#8217;t OSGi bundles and there wasn&#8217;t an obvious way to find them. <!-- more --> After realizing that the <code>About</code> dialog displays the features, I looked at its code and extracted this snippet:</p>
+<figure class='code'> <div class='highlight'><table><tr><td class='gutter'><pre class='line-numbers'><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -126,22 +122,18 @@ at its code and extracted this snippet:</p>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">IBundleGroupProvider</span><span class="o">[]</span> <span class="n">providers</span> <span class="o">=</span> <span class="n">Platform</span><span class="o">.</span><span class="na">getBundleGroupProviders</span><span class="o">();</span>
-</span><span class='line'><span class="k">if</span> <span class="o">(</span><span class="n">providers</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-</span><span class='line'>  <span class="k">for</span> <span class="o">(</span><span class="n">IBundleGroupProvider</span> <span class="n">provider</span> <span class="o">:</span> <span class="n">providers</span><span class="o">)</span> <span class="o">{</span>
-</span><span class='line'>    <span class="n">IBundleGroup</span><span class="o">[]</span> <span class="n">bundleGroups</span> <span class="o">=</span> <span class="n">provider</span><span class="o">.</span><span class="na">getBundleGroups</span><span class="o">();</span>
-</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="n">IBundleGroup</span> <span class="n">group</span> <span class="o">:</span> <span class="n">bundleGroups</span><span class="o">)</span> <span class="o">{</span>
-</span><span class='line'>      <span class="k">if</span> <span class="o">(</span><span class="n">group</span><span class="o">.</span><span class="na">getIdentifier</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="n">featureId</span><span class="o">))</span> <span class="o">{</span>
-</span><span class='line'>        <span class="n">version</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="na">getVersion</span><span class="o">();</span>
-</span><span class='line'>      <span class="o">}</span>
-</span><span class='line'>    <span class="o">}</span>
-</span><span class='line'>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class='n'>IBundleGroupProvider</span><span class='o'>[]</span> <span class='n'>providers</span> <span class='o'>=</span> <span class='n'>Platform</span><span class='o'>.</span><span class='na'>getBundleGroupProviders</span><span class='o'>();</span>
+</span><span class='line'><span class='k'>if</span> <span class='o'>(</span><span class='n'>providers</span> <span class='o'>!=</span> <span class='kc'>null</span><span class='o'>)</span> <span class='o'>{</span>
+</span><span class='line'>  <span class='k'>for</span> <span class='o'>(</span><span class='n'>IBundleGroupProvider</span> <span class='n'>provider</span> <span class='o'>:</span> <span class='n'>providers</span><span class='o'>)</span> <span class='o'>{</span>
+</span><span class='line'>    <span class='n'>IBundleGroup</span><span class='o'>[]</span> <span class='n'>bundleGroups</span> <span class='o'>=</span> <span class='n'>provider</span><span class='o'>.</span><span class='na'>getBundleGroups</span><span class='o'>();</span>
+</span><span class='line'>    <span class='k'>for</span> <span class='o'>(</span><span class='n'>IBundleGroup</span> <span class='n'>group</span> <span class='o'>:</span> <span class='n'>bundleGroups</span><span class='o'>)</span> <span class='o'>{</span>
+</span><span class='line'>      <span class='k'>if</span> <span class='o'>(</span><span class='n'>group</span><span class='o'>.</span><span class='na'>getIdentifier</span><span class='o'>().</span><span class='na'>equals</span><span class='o'>(</span><span class='n'>featureId</span><span class='o'>))</span> <span class='o'>{</span>
+</span><span class='line'>        <span class='n'>version</span> <span class='o'>=</span> <span class='n'>group</span><span class='o'>.</span><span class='na'>getVersion</span><span class='o'>();</span>
+</span><span class='line'>      <span class='o'>}</span>
+</span><span class='line'>    <span class='o'>}</span>
+</span><span class='line'>  <span class='o'>}</span>
+</span><span class='line'><span class='o'>}</span>
+</span></code></pre></td></tr></table></div></figure></div>
 
 
   <footer>
