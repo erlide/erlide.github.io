@@ -1,0 +1,16 @@
+encoding: utf-8
+
+# Site settings
+title: "erlide: an Erlang IDE"
+subtitle: "Turbocharged Erlang development. <br/> Powered by Eclipse"
+description: "Turbocharged Erlang development. Powered by Eclipse"
+author: The erlide team
+email: info@erlide.org
+root_url: "http://erlide.org"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+titlecase: true 
