@@ -64,7 +64,7 @@ style="width: 70%;">Bleeding Edge!</a>
 	<ul class="disc">
 		<li>
 			<p>
-				Install Erlang R14B or later, if it isn't already present on your system. On
+				Install Erlang R15B or later, if it isn't already present on your system. On
 				Windows systems, use a path with no spaces in it.
 			</p>
 		</li>
