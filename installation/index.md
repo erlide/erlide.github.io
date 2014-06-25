@@ -3,12 +3,12 @@ layout: page
 title: "Installation"
 ---
 
-<div style="float:right;width:50%;padding-left: 20px; margin-top: 110px;">
+<div style="float:right;width:49%;padding-left: 20px; margin-top: 110px;">
 	<p>
 		These are Eclipse update site URLs, which you need to paste into the update manager within Eclipse! <strong>Right-click and 'Copy Link'</strong>
 	</p>
 </div>
-<div style="width: 50%;">
+<div style="width: 48%;">
 	<div class="pricing">
 		<table>
 			<tbody>
