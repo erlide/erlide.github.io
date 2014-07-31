@@ -4,8 +4,8 @@ require "stringex"
 
 ## -- Misc Configs -- ##
 public_dir      = "public"    # compiled site directory
-source_dir      = "source"    # source file directory
-blog_index_dir  = 'source/blog'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
+source_dir      = "."    # source file directory
+blog_index_dir  = 'blog'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
 posts_dir       = "_posts"    # directory for blog files
@@ -22,8 +22,8 @@ server_port     = "4000"      # port for preview server eg. localhost:4000
 desc "Generate jekyll site"
 task :generate do
   puts "## Generating Site with Jekyll"
-  system "compass compile --css-dir #{source_dir}/stylesheets"
-  system "jekyll"
+  system "compass compile --css-dir #{source_dir}/css"
+  system "jekyll build"
 end
 
 desc "Watch the site and regenerate when it changes"
