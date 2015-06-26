@@ -69,7 +69,7 @@ style="width: 70%;">Bleeding Edge!</a>
 			</p>
 		</li>
 		<li>
-			<p>Install Eclipse 3.7 or later, if you didn't already.</p>
+			<p>Install Eclipse 3.8 or later, if you didn't already.</p>
 		</li>
 		<li>
 			<p>
