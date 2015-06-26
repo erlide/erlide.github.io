@@ -7,6 +7,10 @@ title: "Installation"
 	<p>
 		These are Eclipse update site URLs, which you need to paste into the update manager within Eclipse! <strong>Right-click and 'Copy Link'</strong>
 	</p>
+	<hr/><br/>
+	<p>
+		For releases after 0.29.11, the update sites are also available as zip archives from <a href="https://github.com/erlide/erlide/releases">Github's erlide releases page</a>.
+	</p>
 </div>
 <div style="width: 48%;">
 	<div class="pricing">
@@ -20,10 +24,10 @@ title: "Installation"
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<a  rel="popover" data-content="This is an Eclipse update site URL, which you need to paste into the update manager within Eclipse!" data-original-title="Right-click and 'Copy Link'" href="http://download.erlide.org/update" class="has-popover btn btn-primary btn-large" style="width: 70%;">Latest Release</a>
+						<a  rel="popover" data-content="This is an Eclipse update site URL, which you need to paste into the update manager within Eclipse!" data-original-title="Right-click and 'Copy Link'" href="http://download.erlide.org/update" class="has-popover btn btn-primary btn-large" style="width: 70%;">Update site</a>
 						<br/>
 						<span style="color: #444;">
-							Or drag and drop into a running Eclipse Indigo workspace {%  include custom/marketplace.html %}
+							Or drag and drop into a running Eclipse Juno+ workspace {%  include custom/marketplace.html %}
 						</span>
 					</td>
 				</tr>
