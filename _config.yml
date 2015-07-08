@@ -12,9 +12,9 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: date
 
 titlecase: true 
 
 #edit-repo : "https://github.com/erlide/erlide/edit/master/org.erlide.help/wiki/"
-edit-repo : "https://github.com/vladdu/erlide/edit/new_doc/org.erlide.help/wiki/"
+edit-repo : "https://github.com/erlide/erlide.github.io/edit/new_docs/"
