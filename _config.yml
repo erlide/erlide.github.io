@@ -11,10 +11,14 @@ root_url: "http://localhost:2233"
 baseurl: ""
 
 # Build settings
+exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md, Dockerfile, fig.yml]
 markdown: kramdown
-permalink: date
+permalink: /blog/:year/:title
 
 titlecase: true 
 
-#edit-repo : "https://github.com/erlide/erlide/edit/master/org.erlide.help/wiki/"
 edit-repo : "https://github.com/erlide/erlide.github.io/edit/new_docs/"
+
+sass:
+    style: :expanded
+    #style: :compressed

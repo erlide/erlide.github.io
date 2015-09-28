@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 title: Blog Archive
 footer: false
 ---
@@ -12,7 +12,15 @@ footer: false
   <h2>{{ year }}</h2>
 {% endunless %}
 <article>
-  {% include archive_post.html %}
+
+<header>
+<h1><a href="{{ site.root_url }}{{ post.url }}">{{post.title}}</a></h1>
+<span class="meta">
+    {% include post/date.html %}{{ time }}
+</span>
+</header>
+
 </article>
 {% endfor %}
+
 </div>

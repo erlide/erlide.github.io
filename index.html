@@ -1,133 +1,121 @@
 ---
-layout: page
-title: 
-description: "erlide: Turbocharged Erlang development. Powered by Eclipse"
+title: erlide, the Erlang IDE
+layout: landing
 ---
+<div class="container">
+    <div class='headline'>
+        <div class='logo'>
+            <h1><a href="/"><span><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a>
+                <br>
+                <a href="http://badge.fury.io/gh/erlide%2Ferlide"><img src="https://badge.fury.io/gh/erlide%2Ferlide.svg" alt="GitHub version" height="18"></a>
+            </h1>
+        </div>
+        <div class='clear' style=''></div>
+    <div class='row-fluid header-flat'>
+        <div class="span7 offset1">
+        <p style=''>
+            An IDE for Erlang, powered by Eclipse.
+        </p>
+        <a class='btn btn-primary btn-large' href='articles/index.html#getting_started'>Get Started! »</a>
+        <a class="btn btn-large" href="articles/index.html">Read documentation »</a>
+        </div>
+        <div class='span4 fade-bg'>
+            <h4>Compatibility</h4>
+            <ul>
+                <li><h6>Erlang R15B+</h6></li>
+                <li><h6>Java 1.6+ </h6></li>
+                <li><h6>Eclipse 3.8+</h6></li>
+                <li>We recommend using the latest available versions</li>
+            </ul>
+        </div>
+        </div>
+    </div>
 
-<p>
-	qqWe are proud to announce the latest version <strong><script type="text/javascript"
-        src="http://download.erlide.org/update/version.js"></script></strong>
-	and offers the following features:
-</p>
-<p>
-<ul>
-	<li>
-		Works with <strong>Eclipse 3.8+, Java 1.6+ and Erlang R15B+</strong>
-		and later. <br><em>Support for Erlang/OTP 18.0 is implemented </em>.<br>
-		Note that only v0.29.1 and later work with Eclipse 4.4 Luna.
-		<br>The last version supporting Eclipse 3.7 is 0.29.5.
-	</li>
-	<li>
-		<h4>Project management</h4>
-		<ul>
-			<li>create project wizard</li>
-			<li>
-				create module with templates (for example gen_server, application)
-			</li>
-			<li>
-				dependencies between projects
-				<ul>
-					<li>defined with in the project properties</li>
-					<li class="planned">understands emake, rebar</li>
-				</ul>
-			</li>
-			<li>
-				configure projects (source directories, test directories, etc)
-			</li>
-		</ul>
-	</li>
-	<li>
-		<h4>Backend management</h4>
-		A backend is an Erlang runtime that can be used by erlide.
-		<ul>
-			<li>define and configure; projects can choose any as baseline</li>
-		</ul>
-	</li>
-	<li>
-		<h4>Editor support</h4>
-		<ul>
-			<li>code syntax highlighting</li>
-			<li>show code structure in outline</li>
-			<li>
-				search and navigation to definition/references of
-				<ul>
-					<li>modules</li>
-					<li>functions</li>
-					<li>records and record fields</li>
-					<li>macros</li>
-					<li>variables</li>
-				</ul>
-			</li>
-			<li>autocompletion for code elements (same as above)</li>
-			<li class="planned">automated quick fixes for common errors</li>
-			<li>presentation of documentation on hover and in special view</li>
-			<li>from comments and -spec</li>
-			<li>for OTP libraries, from the official documentation</li>
-			<li>
-				templates for code constructs, for example &lsquo;case&rsquo;, &lsquo;try&rsquo;, &lsquo;receive&rsquo;, user defined
-			</li>
-			<li class="planned">show places where a function is called from (hierarchically)</li>
-			<li>integration with Wrangler for refactoring support</li>
-			<li>correct indentation of code</li>
-			<li class="planned">pretty-print code</li>
-			<li class="planned">understand parse transforms in the editor</li>
-			<li>
-				edoc exporter (under
-				<code>File &rarr; Export...</code>
-				)
-			</li>
-		</ul>
-	</li>
-	<li>
-		<h3>Compilation</h3>
-		<ul>
-			<li>
-				build project
-				<ul>
-					<li>internal builder uses a dedicated backend</li>
-					<li class="planned">understands emake, rebar</li>
-					<li class="planned">can use external make script</li>
-				</ul>
-			</li>
-			<li>compile just one module</li>
-		</ul>
-	</li>
-	<li>
-		<h4>Running/debugging code</h4>
-		<ul>
-			<li>launch Erlang node with current projects loaded</li>
-			<li>console view with syntax highlighting</li>
-			<li>
-				use Eclipse debugger on the code (stacktrace, current variables, breakpoints); works on remote nodes too
-			</li>
-			<li>
-				&ldquo;live expressions&rdquo;: user defined expressions that are evaluated each time code is changed, making debugging less needed
-			</li>
-			<li class="planned">run tests and show the results (eunit, common test)</li>
-			<li class="sgsn">support for bt_erl</li>
-			<li>configure and display tracing information</li>
-			<li>configure and display coverage information</li>
-			<li class="planned">replay a trace captured from the debugger</li>
-		</ul>
-	</li>
-	<li>
-		<h4>Integration with OTP and third party tools</h4>
-		<ul class="col">
-			<li>debugger</li>
-			<li>dialyzer</li>
-			<li class="planned">observer</li>
-			<li>etop</li>
-			<li class="planned">mnesia table viewer</li>
-			<li>eunit</li>
-			<li class="planned">common test</li>
-			<li>wrangler</li>
-			<li class="planned">refactorErl</li>
-			<li class="planned">rebar</li>
-		</ul>
-	</li>
-</ul>
-</p>
-<p>
-	A list of the user-visible changes is in the
-	<a href="http://github.com/erlide/erlide/raw/master/CHANGES">change log</a>.
-</p>
+    <div class='row-fluid'>
+        <div class='span4'>
+            <h2>Manage projects</h2>
+            <p>
+            <img src="/assets/images/navigator.png"/>
+            <ul>
+                <li>create project wizard</li>
+                <li>
+                    create module with templates (for example gen_server, application)
+                </li>
+                <li>
+                    track dependencies between projects
+                </li>
+                <li>
+                    configure projects (source directories, test directories, etc)
+                </li>
+            </ul>
+            <h3>Planned features</h3>
+            <ul>
+                <li>use emake, rebar for configuration and build</li>
+            </ul>
+            </p>
+        </div>
+        <div class='span4'>
+            <h2>Editing support</h2>
+            <p>
+            <img src="/assets/images/editor.png"/>
+            <ul>
+            <li>code syntax highlighting</li>
+            <li>show code structure in outline</li>
+            <li>
+                search and navigation to definition/references of code elements
+            </li>
+            <li>autocompletion for code elements</li>
+            <li>presentation of documentation from code and OTP</li>
+            <li>correct indentation of code</li>
+            </ul>
+            <h3>Planned features</h3>
+            <ul>
+            <li>show places where a function is called from (hierarchically)</li>
+            <li>pretty-print code</li>
+            <li>automated quick fixes for common errors</li>
+        </ul></p>
+        </div>
+        <div class='span4'>
+            <h2>Tool integrations</h2>
+            <p> 
+                <img src="/assets/images/debug.png"/>
+                <ul>
+                <li>run and debug your code</li>
+                <li>execute dialyzer on your projects</li>
+                <li>view and export edoc documentation</li>
+            </ul>
+            <h3>Planned features</h3>
+            <ul>
+                <li>tracing</li>
+                <li>observer</li>
+            </ul></p>
+        </div>
+</div>
+<div class='row-fluid'>
+    <div class='span12'>
+        <section class="banner">
+            <h3>Many thanks to our friends and sponsors:</h3>
+            <ul class="row-fluid banner">
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.ericsson.com" rel="nofollow"><img src="/assets/images/sponsors/Ericsson-logo.jpg" alt="Ericsson" /></a>
+                </li>
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.erlang.org" rel="nofollow"><img src="/assets/images/sponsors/erlang110.gif" width="110" height="96" alt="Erlang"/></a>
+                </li>
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.eclipse.org" rel="nofollow"><img src="/assets/images/sponsors/Eclipse_Logo2014_New.jpg" width="250" alt="Eclipse"/></a>
+                </li>
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.erlang-solutions.com" rel="nofollow"><img src="/assets/images/sponsors/ES_new_logo_small.png" width="200" alt="Erlang Solutions"/></a>
+                </li>
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.headwaysoftware.com/products/" rel="nofollow"><img src="/assets/images/sponsors/sr101-5-icon-white-180x85.png" width="180" height="85" alt="Structure101 - Tools to reduce the complexity of your codebase"/></a>
+                </li>
+                <li class="span2">
+                     <span class="helper"></span><a href="http://www.ej-technologies.com/products/jprofiler/overview.html" rel="nofollow"><img src="/assets/images/sponsors/jprofiler.png" alt="JProfiler - award-winning all-in-one Java profiler"/></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+

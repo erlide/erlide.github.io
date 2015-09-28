@@ -1,21 +1,39 @@
 ---
 title: News
-layout: default
+layout: blog
 ---
 
 <div class="blog-index">
-  {% assign index = true %}
-  {% for post in site.posts %}
-  {% assign content = post.content %}
+    {% for post in site.posts limit:5 %}
+    {% assign content = post.content %}
     <article>
-      {% include article.html %}
+
+        <header>
+            <h2 class="entry-title">
+                <a href="{{ post.url }}">
+                    {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}
+                </a>
+            </h2>
+            <span class="meta">
+                {% include post/date.html %}{{ time }}
+            </span>
+        </header>
+
+        <div class="entry-content">{{ post.excerpt }}</div>
+        <footer>
+            {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
+            {% if excerpted == 'true' %}
+            <a rel="full-article" href="{{ post.url }}">{{ site.excerpt_link }}</a>
+            {% endif %}
+        </footer>
+
     </article>
-  {% endfor %}
-    <a href="/blog/archives">Blog Archives</a>
+    {% endfor %}
+
+    <article>
+        <header>
+            <h2><a href="/blog/archives">All posts</a></h2>
+        </header>
+    </article>
+
 </div>
-<aside class="sidebar">
-    {% include custom/asides/install_links.html %}
-    {% include asides/recent_posts.html %}
-    {% include custom/asides/sponsors.html %}
-    {% include custom/asides/links.html %}
-</aside>

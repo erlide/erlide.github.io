@@ -1,3 +1,10 @@
+.bundle
+.DS_Store
+.rvmrc
 _site
-.sass-cache/
-
+bin
+.sass-cache
+*.sassc
+*\#*
+~*
+_cache
