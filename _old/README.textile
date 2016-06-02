@@ -1,3 +1,0 @@
-
-This is the main website for the erlide.org project.
-

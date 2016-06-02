@@ -23,4 +23,4 @@ If possible, try to explain what behavior you expected and why. Bonus points for
 
 The code is hosted at GitHub, [http://github.com/erlide/erlide](http://github.com/erlide/erlide).
 
-See [the developer documentation](articles/index.html#dev-guide) for more details.
+See [the Eclipse developer documentation](articles/eclipse/index.html#dev-guide) for more details.
