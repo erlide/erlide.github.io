@@ -43,9 +43,9 @@ glad to guide you around the code.
 
 ### Contributing to erlide
 
-So you want to get hacking on erlide. If you’re new to Git, please read [New to Git](New-to-Git.html). If you know your way around it, read the following
-(parts shamelessly adapted from the pages at
-[erlang/otp](https://github.com/erlang/otp/wiki)):
+So you want to get hacking on erlide? If you’re new to Git, please read [New to Git](New-to-Git.html). 
+If you know your way around it, read the following
+(parts shamelessly adapted from the pages at [erlang/otp](https://github.com/erlang/otp/wiki)):
 
 - [Tools and requirements](developer/310_Tools-and-requirements.html)
 - [Accessing the code](developer/320_Accessing-the-code.html)
