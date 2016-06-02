@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 title: Troubleshooting
 part: Getting started
 ---

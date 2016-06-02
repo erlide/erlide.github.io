@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 title: Installing and updating
 part: Getting started
 ---

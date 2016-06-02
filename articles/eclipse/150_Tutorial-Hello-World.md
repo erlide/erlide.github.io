@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 part: Getting started
 title: "Tutorial: Hello, world!"
 ---

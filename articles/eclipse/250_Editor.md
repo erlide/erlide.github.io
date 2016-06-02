@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 part: Reference
 ---
 

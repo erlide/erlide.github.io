@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 title: Creating a project
 part: Reference
 ---

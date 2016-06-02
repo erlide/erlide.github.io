@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: article_eclipse
 title: Running and debugging Erlang code
 part: Reference
 ---
