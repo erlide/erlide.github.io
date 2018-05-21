@@ -6,8 +6,8 @@ part: Getting started
 
 # Installing and updating
 
-* Install Erlang __R15__ or later, if it isn't already present on your system. On Windows systems, use a path with no spaces in it.
-* Install Eclipse. We target primarily version __3.8/4.2__, later versions work just as well.
+* Install Erlang __R17__ or later, if it isn't already present on your system. On Windows systems, use a path with no spaces in it.
+* Install Eclipse. We target primarily version __4.6__, later versions work just as well.
 * If your network uses a proxy to connect to the internet, fill in the appropriate data in `Window -> Preferences -> Install/Update -> Proxy settings`
 * Install Erlide by going to `Help -> Software Updates -> Find` and `Install... -> Search for new features to install`. 
 * In the dialog, choose New remote site and enter `Erlide` as name and `http://download.erlide.org/update` as URL.

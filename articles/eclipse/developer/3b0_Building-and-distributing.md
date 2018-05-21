@@ -17,11 +17,9 @@ There are three update sites:
 
 ## Building Erlide
 
-Building is done using [Buckminster](http://eclipse.org/buckminster).
-This has the great advantage that the build is done inside a regular
-Eclipse workspace, with the regular builders for that project, and we
-don’t have to bother to add custom build scripts for Erlang code (that
-also has to use the same config as in the IDE).
+** This part is outdated **
+
+Building is done using Maven and Tycho.
 
 For headless builds, the `org.erlide.releng` project contains all the
 necessary scripts and more detailed information. To drive the builds,
@@ -31,11 +29,6 @@ installed) which more or less calls Ant with `build.ant`.
 The Ant script can install Buckminster and there is also a
 `setup_tools.sh` script that will install java, ant, otp R15 and jruby
 in your home directory. (JRuby is used because it had seamless integration with Ant)
-
-For building the update site from inside Eclipse, right-click on the
-`org.erlide.site` project and choose `Buckminster&rarr;Invoke action`. In the
-dialog, specify org.erlide.site/buckminster.properties as properties
-file and select `site.p2` as action. 
 
 ### Build target
 
