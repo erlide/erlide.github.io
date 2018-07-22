@@ -6,8 +6,8 @@ subtitle: "Turbocharged Erlang development. <br/> Powered by Eclipse"
 description: "Turbocharged Erlang development. Powered by Eclipse"
 author: The erlide team
 email: info@erlide.org
-#root_url: "http://erlide.org"
-root_url: "http://localhost:2233"
+#root_url: "https://erlide.org"
+root_url: "https://localhost:2233"
 baseurl: ""
 
 # Build settings

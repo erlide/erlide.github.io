@@ -7,8 +7,8 @@ categories:
 author: Vlad
 ---
 
-I have changed the site generation from [Jekyll](http://github.com/mojombo/jekyll) to 
-[Octopress](http://octopress.org/) and decided to start blogging here too. There was 
+I have changed the site generation from [Jekyll](https://github.com/mojombo/jekyll) to 
+[Octopress](https://octopress.org/) and decided to start blogging here too. There was 
 a blog at Blogger, but it feels better to have it all in one place. I even imported 
 a couple of the old entries that feel relevant.
 

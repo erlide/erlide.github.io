@@ -7,7 +7,7 @@ layout: article
 
 Announcements of releases, important changes and so
 on, are made here on [the website](/blog) 
-and sometimes on the [erlang-questions mailing list](http://erlang.org/mailman/listinfo/erlang-questions).
+and sometimes on the [erlang-questions mailing list](https://erlang.org/mailman/listinfo/erlang-questions).
 
 ## Reporting Issues         
 
@@ -29,6 +29,6 @@ If possible, try to explain what behavior you expected and why. Bonus points for
 <a class="btn btn-large" href="https://github.com/erlang/erlide_eclipse">Browse the eclipse code</a>
 </div>
 
-The code is hosted at GitHub, [http://github.com/erlang/erlide_eclipse](http://github.com/erlang/erlide_eclipse) and [http://github.com/erlang/erlide_kernel](http://github.com/erlang/erlide_kernel).
+The code is hosted at GitHub, [https://github.com/erlang/erlide_eclipse](https://github.com/erlang/erlide_eclipse) and [https://github.com/erlang/erlide_kernel](https://github.com/erlang/erlide_kernel).
 
 See [the Eclipse developer documentation](articles/eclipse/index.html#dev-guide) for more details.

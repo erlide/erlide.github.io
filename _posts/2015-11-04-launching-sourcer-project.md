@@ -7,7 +7,7 @@ categories: announcements
 author: Vlad
 ---
 
-[Sourcer](https://github.com/erlide/sourcer) is an Erlang scanner+parser tailored for use in tools that handle source code (like IDEs and refactoring tools), keeping track of the exact source code in the files and allowing for incomplete and malformed code. It was originally developed as part of [erlide](http://erlide.org), but it is easier to handle and to get feedback if it is a separate project. As a matter of fact, I discovered many bugs, thinkos and other problems just by looking at the code as an independent entity.
+[Sourcer](https://github.com/erlide/sourcer) is an Erlang scanner+parser tailored for use in tools that handle source code (like IDEs and refactoring tools), keeping track of the exact source code in the files and allowing for incomplete and malformed code. It was originally developed as part of [erlide](https://erlide.org), but it is easier to handle and to get feedback if it is a separate project. As a matter of fact, I discovered many bugs, thinkos and other problems just by looking at the code as an independent entity.
 
 *Note:* the current status is still very alpha. I hope to get feedback from any interested party and important changes will almost certainly happen to both implementation and API. 
 

@@ -14,7 +14,7 @@ it makes it hard/slow to test. So for some year ago I sketched a plan for how to
 <!-- more -->
 
 One of the alternatives and the one we drove the last half of last year, is to start using Xtext, an Eclipse 
-framework for developing language support ([xtext.org](http://xtext.org)). It was all nice and dandy, until 
+framework for developing language support ([xtext.org](https://xtext.org)). It was all nice and dandy, until 
 we discovered that there were performance problems for large projects (which our main user base has). These 
 problems we could not solve right away and we decided to wait and see how Xtext evolves.
 

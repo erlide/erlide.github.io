@@ -18,7 +18,7 @@ part: Erlide documentation
   - [Hello world](150_Tutorial-Hello-World.html) by Alain O’Dea
 * [Troubleshooting](160_Troubleshooting.html)
 * [FAQ](170_FAQ.html) - check this out first.
-* Bugs? Suggestions? [Write a support ticket!](http://github.com/erlang/erlide_eclipse/issues)
+* Bugs? Suggestions? [Write a support ticket!](https://github.com/erlang/erlide_eclipse/issues)
   Please attach (or email) logs retrieved with
   `Window -> Preferences -> Erlang -> Report problem`.
 

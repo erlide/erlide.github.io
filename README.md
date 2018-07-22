@@ -1,7 +1,7 @@
 # Project Name Documentation
 
 This is a documentation site for [Project Name](). Copy or clone me and adapt for your project
-that needs documentation guides similar to [clojureelasticsearch.info](http://clojureelasticsearch.info) and
+that needs documentation guides similar to [clojureelasticsearch.info](https://clojureelasticsearch.info) and
 other ClojureWerkz projects.
 
 
@@ -15,7 +15,7 @@ With Bundler:
 
     ./bin/jekyll serve
 
-then navigate to [localhost:4000](http://localhost:4000)
+then navigate to [localhost:4000](https://localhost:4000)
 
 ### How to regenerate the site
 
