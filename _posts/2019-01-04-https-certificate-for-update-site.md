@@ -9,7 +9,7 @@ categories:
 On OSX it looks like the Eclipse updater doesn't install the HTTPS certificate used for the update site. 
 Use the following instructions to install it locally (courtesy of @geib, thanks for that!)
 
-1. Used a nice tool InstallCert.java to download the certificate.
+1. Use for example InstallCert.java to download the certificate (https://github.com/escline/InstallCert).
     ```java InstallCert download.erlide.org:443```
 
 2. ```keytool -exportcert -alias download.erlide.org-1 -keystore jssecacerts -storepass changeit -file download.erlide.org.cer```
