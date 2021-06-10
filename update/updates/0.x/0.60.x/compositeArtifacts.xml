@@ -2,12 +2,13 @@
 <?compositeArtifactRepository version='1.0.0'?>
 <repository name='Erlide Composite Site 0.60.x' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1621950153216'/>
+    <property name='p2.timestamp' value='1623358126549'/>
     <property name='p2.atomic.composite.loading' value='false'/>
   </properties>
-  <children size='3'>
+  <children size='4'>
     <child location='../../../releases/0.60.1.v20210402-1627'/>
     <child location='../../../releases/0.60.2.v20210522-1351'/>
     <child location='../../../releases/0.60.3.v20210522-1351'/>
+    <child location='../../../releases/0.60.4.v20210522-1351'/>
   </children>
 </repository>
