@@ -2,24 +2,22 @@
 title: News
 layout: blog
 ---
-
-<div class="blog-index">
+<div class="flex flex-col gap-6">
     {% for post in site.posts limit:5 %}
     {% assign content = post.content %}
-    <article>
+    <article class="flex flex-col">
 
-        <header>
-            <h2 class="entry-title">
+        <header class="flex">
+            <div class="flex-1 font-fancy text-lg font-bold text-blue-800">
                 <a href="{{ post.url }}">
                     {% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}
                 </a>
-            </h2>
-            <span class="meta">
+            </div>
+            <span class="text-gray-700">
                 {% include post/date.html %}{{ time }}
             </span>
         </header>
-
-        <div class="entry-content">{{ post.excerpt }}</div>
+        <div class="prose">{{ post.excerpt }}</div>
         <footer>
             {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
             {% if excerpted == 'true' %}
@@ -32,7 +30,7 @@ layout: blog
 
     <article>
         <header>
-            <h2><a href="/blog/archives">All posts</a></h2>
+            <h2 class="font-fancy text-lg font-bold text-blue-900"><a href="/blog/archives">All posts</a></h2>
         </header>
     </article>
 

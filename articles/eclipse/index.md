@@ -3,9 +3,6 @@ layout: article_eclipse
 title: Eclipse client documentation
 part: Erlide documentation
 ---
-
-<img src="https://raw.githubusercontent.com/erlang/erlide_eclipse/master/plugins/org.erlide.branding/images/erl-zen-badge-160.png" alt="erlide logo" class="pull-right no-eclipse">
-
 ## User's guide
 
 ### Getting started
@@ -43,13 +40,12 @@ glad to guide you around the code.
 
 ### Contributing to erlide
 
-So you want to get hacking on erlide? If you’re new to Git, please read [New to Git](New-to-Git.html). 
+So you want to get hacking on erlide? If you’re new to Git, please read [New to Git](New-to-Git.html).
 If you know your way around it, read the following
 (parts shamelessly adapted from the pages at [erlang/otp](https://github.com/erlang/otp/wiki)):
 
 - [Tools and requirements](developer/310_Tools-and-requirements.html)
 - [Accessing the code](developer/320_Accessing-the-code.html)
-
 - [Branches](developer/330_Branches.html)
 - [Submitting patches](developer/340_Submitting-patches.html)
 - [Git Tools and Hacks](developer/350_Git-Tools-and-Hacks.html)
@@ -62,4 +58,3 @@ If you know your way around it, read the following
 - [Development policies](developer/3c0_Development-policies.html)
 - [Release process](developer/3d0_Release-process.html)
 - [Creating a release](developer/3e0_Creating-a-release.html)
-

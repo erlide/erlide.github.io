@@ -11,12 +11,8 @@ root_url: "https://localhost:2233"
 baseurl: ""
 
 # Build settings
-exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md, Dockerfile, fig.yml]
+exclude: [bin, CNAME, Gemfile, Gemfile.lock, README.md, Dockerfile, fig.yml, node_modules, "assets/source"]
 markdown: kramdown
 permalink: /blog/:year/:title
 
-titlecase: true 
-
-sass:
-    style: :expanded
-    #style: :compressed
+titlecase: true

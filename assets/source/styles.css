@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Signika+Negative&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply text-gray-900 bg-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-fancy font-bold text-lg my-3;
+}
+
+.headline {
+  position: relative;
+  background-image: url("../images/erlide_zen_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.headline h1 {
+  font-size: 100px;
+  line-height: 60px;
+  font-family: Georgia, serif;
+  margin-bottom: 100px;
+}
+
+.headline p {
+  padding-top: 20px;
+  font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline .logo {
+  opacity: 1.0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  font-family: Georgia, serif;
+}
+
+._A80103 {
+  color: #A80103;
+}
+
+._5C4A95 {
+  color: #5C4A95;
+}
+
+span.hdr-logo {
+  float: right;
+  padding: 10px 15px;
+  font-size: 2em;
+}
+
+.fade-bg {
+  text-align: center;
+  color: #333;
+  text-shadow: white 0.05em 0.05em 3px;
+  background: radial-gradient(white, transparent);
+  background-size: cover;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(77, 77, 77, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.65)), color-stop(70%, rgba(77, 77, 77, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(77, 77, 77, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(77, 77, 77, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.65) 0%, rgba(77, 77, 77, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.65) 0%, rgba(77, 77, 77, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffffff', endColorstr='#00000000', GradientType=1);
+}

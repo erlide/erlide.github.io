@@ -159,6 +159,7 @@ GEM
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-postcss (0.5.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -293,6 +294,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-postcss
   nokogiri (>= 1.10.4)
 
 BUNDLED WITH

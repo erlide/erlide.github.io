@@ -1,65 +1,77 @@
 ---
 title: erlide, the Erlang IDE
-layout: landing
+layout: base
 ---
-<div class="container">
-    <div class='headline'>
-        <div class='logo'>
-            <h1>
-                <a href="/"><span><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a>
-            </h1>
-            <p>
-            Kernel: <a href="https://badge.fury.io/gh/erlang%2Ferlide_kernel"><img src="https://badge.fury.io/gh/erlang%2Ferlide_kernel.svg" alt="Kernel version" height="18"></a>
-            <br>
-            Eclipse: <a href="https://badge.fury.io/gh/erlang%2Ferlide_eclipse"><img src="https://badge.fury.io/gh/erlang%2Ferlide_eclipse.svg" alt="Eclipse version" height="18"></a>
-            </p>
-        </div>
-        <div class='clear' style=''></div>
-    <div class='row-fluid header-flat'>
-        <div class="span7 offset1">
-        <p style=''>
-            An IDE for Erlang, powered by Eclipse.
-        </p>
-        <a class='btn btn-primary btn-large' href='articles/index.html#getting_started'>Get Started! »</a>
-        <a class="btn btn-large" href="articles/eclipse/index.html">Read Eclipse documentation »</a>
-        </div>
-        <div class='span4 fade-bg'>
-            <h4>Compatibility</h4>
-            <ul>
-                <li><h6>Erlang R20+</h6></li>
-                <li><h6>Java 1.8+ </h6></li>
-                <li><h6>Eclipse 4.9+</h6></li>
-                <li>We recommend using the latest available versions.</li>
-            </ul>
-        </div>
+<div class='bg-[url("../images/erlide_zen_1280.jpg")] bg-right-top bg-cover overflow-hidden mt-5 px-12 py-8'>
+    <div class='w-fit bg-transparent p-3 rounded backdrop-blur shadow-md'>
+        <h1 class="text-8xl sm:text-9xl">
+            <a href="/"><span><span class="_A80103">erl</span><span class="_5C4A95">ide</span></span></a>
+        </h1>
+        <div >
+            <span class="flex gap-4 items-center">Kernel: <a href="https://badge.fury.io/gh/erlang%2Ferlide_kernel"><img
+                        src="https://badge.fury.io/gh/erlang%2Ferlide_kernel.svg" alt="Kernel version"
+                        height="18"></a></span>
+
+            <span class="flex gap-4 items-center">Eclipse: <a
+                    href="https://badge.fury.io/gh/erlang%2Ferlide_eclipse"><img
+                        src="https://badge.fury.io/gh/erlang%2Ferlide_eclipse.svg" alt="Eclipse version"
+                        height="18"></a></span>
         </div>
     </div>
 
-    <div class='row-fluid'>
-        <div class='span4'>
-            <h2>Manage projects</h2>
-            <img src="/assets/images/navigator.png" alt="Navigator snapshot"/>
-            <ul>
-                <li>create project wizard</li>
-                <li>
-                    create module with templates (for example gen_server, application)
-                </li>
-                <li>
-                    track dependencies between projects
-                </li>
-                <li>
-                    configure projects (source directories, test directories, etc)
-                </li>
-            </ul>
-            <h3>Planned features</h3>
-            <ul>
-                <li>use rebar for configuration and build</li>
-            </ul>
+    <div class='flex flex-wrap mt-4'>
+        <div class="w-full md:w-2/3 offset1 flex flex-col items-start gap-3">
+            <p class='font-fancy text-xl mb-2'>
+                An IDE for Erlang, powered by Eclipse.
+            </p>
+            <a class='inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600 shadow'
+                href='articles/index.html#getting_started'>Get Started! »</a>
+            <a class="inline-block align-middle text-center select-none border bg-gray-100 font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline shadow"
+                href="articles/eclipse/index.html">Read Eclipse documentation »</a>
         </div>
-        <div class='span4'>
-            <h2>Editing support</h2>
-            <img src="/assets/images/editor.png" alt="Editor snapshot"/>
-            <ul>
+        <div class='w-fit md:w-1/3 text-gray-700 mt-3 bg-transparent p-3 rounded backdrop-blur shadow-md'>
+            <h4 class="">Compatibility</h4>
+            <ul class=" font-bold">
+                <li class="ml-6">
+                    Erlang R20+
+                </li>
+                <li class="ml-6">
+                    Java 1.8+
+                </li>
+                <li class="ml-6">
+                    Eclipse 4.9+
+                </li>
+            </ul>
+            <p class="mt-4">We recommend using the latest available versions.</p>
+        </div>
+    </div>
+</div>
+
+<div class='flex flex-wrap md:flex-nowrap gap-4'>
+    <div class='w-full md:w-1/3'>
+        <h2>Manage projects</h2>
+        <img class="w-full" src="/assets/images/navigator.png" class="mb-4" alt="Navigator snapshot" />
+        <ul class="list-disc list-inside">
+            <li>create project wizard</li>
+            <li>
+                create module with templates (for example gen_server, application)
+            </li>
+            <li>
+                track dependencies between projects
+            </li>
+            <li>
+                configure projects (source directories, test directories, etc)
+            </li>
+        </ul>
+        <div class="font-bold mt-3">Planned features</div>
+        <ul class="list-disc list-inside">
+            <li>use rebar for configuration and build</li>
+        </ul>
+    </div>
+    <div class='w-full md:w-1/3'>
+        <h2>Editing support</h2>
+        <img  class="w-full" src="/assets/images/editor.png" class="mb-4" alt="Editor snapshot" />
+        <ul class="list-disc list-inside">
             <li>code syntax highlighting</li>
             <li>show code structure in outline</li>
             <li>
@@ -68,54 +80,59 @@ layout: landing
             <li>autocompletion for code elements</li>
             <li>presentation of documentation from code and OTP</li>
             <li>correct indentation of code</li>
-            </ul>
-            <h3>Planned features</h3>
-            <ul>
+        </ul>
+        <div class="font-bold mt-3">Planned features</div>
+        <ul class="list-disc list-inside">
             <li>show places where a function is called from (hierarchically)</li>
             <li>pretty-print code</li>
             <li>automated quick fixes for common errors</li>
         </ul>
-        </div>
-        <div class='span4'>
-            <h2>Tool integrations</h2>
-            <img src="/assets/images/debug.png" alt="Debugger snapshot"/>
-            <ul>
-	            <li>run and debug your code, with hot code reloading when the editor is saved</li>
-	            <li>execute dialyzer on your projects</li>
-	            <li>view and export edoc documentation</li>
-            </ul>
-            <h3>Planned features</h3>
-            <ul>
-                <li>tracing</li>
-                <li>observer</li>
-            </ul>
-        </div>
     </div>
-    <div class='row-fluid'>
-        <div class='span12'>
-            <section class="banner">
-                <h3>Many thanks to our friends and sponsors:</h3>
-                <ul class="row-fluid banner">
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.ericsson.com" rel="nofollow"><img src="/assets/images/sponsors/Ericsson-logo.jpg" alt="Ericsson" /></a>
-                    </li>
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.erlang.org" rel="nofollow"><img src="/assets/images/sponsors/erlang110.gif" width="110" height="96" alt="Erlang"/></a>
-                    </li>
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.eclipse.org" rel="nofollow"><img src="/assets/images/sponsors/Eclipse_Logo2014_New.jpg" width="250" alt="Eclipse"/></a>
-                    </li>
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.erlang-solutions.com" rel="nofollow"><img src="/assets/images/sponsors/ES_new_logo_small.png" width="200" alt="Erlang Solutions"/></a>
-                    </li>
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.headwaysoftware.com/products/" rel="nofollow"><img src="/assets/images/sponsors/sr101-5-icon-white-180x85.png" width="180" height="85" alt="Structure101 - Tools to reduce the complexity of your codebase"/></a>
-                    </li>
-                    <li class="span2">
-                         <span class="helper"></span><a href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="nofollow"><img src="/assets/images/sponsors/jprofiler_large.png" alt="JProfiler - award-winning all-in-one Java profiler"/></a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+    <div class='w-full md:w-1/3'>
+        <h2>Tool integrations</h2>
+        <img  class="w-full"  src="/assets/images/debug.png" class="mb-4" alt="Debugger snapshot" />
+        <ul class="list-disc list-inside">
+            <li>run and debug your code, with hot code reloading when the editor is saved</li>
+            <li>execute dialyzer on your projects</li>
+            <li>view and export edoc documentation</li>
+        </ul>
+        <div class="font-bold mt-3">Planned features</div>
+        <ul class="list-disc list-inside">
+            <li>tracing</li>
+            <li>observer</li>
+        </ul>
     </div>
+</div>
+<div class='w-full mt-12 mb-6'>
+    <section class="">
+        <h3 class="mb-8 text-gray-700">Many thanks to our friends and sponsors:</h3>
+        <ul class="flex flex-wrap md:flex-nowrap items-center justify-center gap-4">
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.ericsson.com" rel="nofollow"><img src="/assets/images/sponsors/Ericsson-logo.jpg"
+                        alt="Ericsson" /></a>
+            </li>
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.erlang.org" rel="nofollow"><img src="/assets/images/sponsors/erlang110.gif"
+                        width="110" height="96" alt="Erlang" /></a>
+            </li>
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.eclipse.org" rel="nofollow"><img
+                        src="/assets/images/sponsors/Eclipse_Logo2014_New.jpg" width="250" alt="Eclipse" /></a>
+            </li>
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.erlang-solutions.com" rel="nofollow"><img
+                        src="/assets/images/sponsors/ES_new_logo_small.png" width="200" alt="Erlang Solutions" /></a>
+            </li>
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.headwaysoftware.com/products/" rel="nofollow"><img
+                        src="/assets/images/sponsors/sr101-5-icon-white-180x85.png" width="180" height="85"
+                        alt="Structure101 - Tools to reduce the complexity of your codebase" /></a>
+            </li>
+            <li class="w-1/3 md:w-1/6 ">
+                <a class="max-h-24" href="https://www.ej-technologies.com/products/jprofiler/overview.html" rel="nofollow"><img
+                        src="/assets/images/sponsors/jprofiler_large.png"
+                        alt="JProfiler - award-winning all-in-one Java profiler" /></a>
+            </li>
+        </ul>
+    </section>
 </div>
