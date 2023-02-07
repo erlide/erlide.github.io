@@ -1,11 +1,24 @@
-# Project Name Documentation
+# Erlide project site
 
-This is a documentation site for [Project Name](). Copy or clone me and adapt for your project
-that needs documentation guides similar to [clojureelasticsearch.info](https://clojureelasticsearch.info) and
-other ClojureWerkz projects.
+This is the source for [Erlide's](https://erlide.org/) project site that is published using
+[GitHub Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll).
+
+The site is styled using [Tailwind CSS](https://tailwindcss.com/).
+
+## Repository content
+
+Files in following directories should not be manually changed:
+
+- `articles/` that contains documentation.
+- `update/` that contains plugin packages, i.e. the update site.
+
+These directories should instead be updated by publishing updates from the
+[erlide_eclipse](https://github.com/erlang/erlide_eclipse) repo using its Makefile.
 
 
-## Install Dependencies
+## Local development tips
+
+### Install dependencies
 
 With Bundler:
 
@@ -13,16 +26,10 @@ With Bundler:
 
 ### How to run a development server
 
-    ./bin/jekyll serve
+    jekyll serve
 
 then navigate to [localhost:4000](https://localhost:4000)
 
 ### How to regenerate the site
 
-    ./bin/jekyll build
-
-## License & Copyright
-
-Copyright (C) 2014-2015 Alexander Petrov, Michael S. Klishin, Zack Maril, and the ClojureWerkz team.
-
-Distributed under the Eclipse Public License, the same as Clojure.
+    jekyll build
