@@ -3,6 +3,9 @@ layout: article_eclipse
 title: Eclipse client documentation
 part: Erlide documentation
 ---
+
+<img src="https://raw.githubusercontent.com/erlang/erlide_eclipse/master/plugins/org.erlide.branding/images/erl-zen-badge-160.png" alt="erlide logo" class="pull-right no-eclipse">
+
 ## User's guide
 
 ### Getting started
@@ -34,7 +37,7 @@ glad to guide you around the code.
 * [Running and debugging Erlang code](280_Running-and-debugging-Erlang-code.html)
 * Plug-ins
   - [Tracing plugin](tracing/510_Tracing-plugin.html)
-  - [Cover Plugin](cover/410_Cover-Plugin.html)
+  - [Cover plugin](cover/410_Cover-plugin.html)
 
 ## <a name="dev-guide"></a>Developer's guide
 

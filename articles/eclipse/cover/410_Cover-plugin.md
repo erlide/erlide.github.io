@@ -9,7 +9,7 @@ Cover plugin is an integration of Erlang cover tool with ErlIde. It provides a f
 
 To learn more about cover click the following link [https://www.erlang.org/doc/apps/tools/cover_chapter.html](https://www.erlang.org/doc/apps/tools/cover_chapter.html). Cover reference manual can be found here [https://www.erlang.org/doc/man/cover.html](https://www.erlang.org/doc/man/cover.html).
 
-Cover plugin was developed as a part of [ProTest project ]( https://www.protest-project.eu/)  by [Erlang Solutions ]( https://www.erlang-solutions.com/) .
+Cover plugin was developed as a part of [ProTest project ](https://www.protest-project.eu/)  by [Erlang Solutions ](https://www.erlang-solutions.com/) .
 
 ## Features
 *  Providing coverage statistics (coverage ratio per function, module, source folder, project) 
@@ -28,8 +28,3 @@ If you want to understand the source code go [here](430_Cover-plugin-implementat
 ## Examples
 
 You can find examples how to use this plugin [here](420_Cover-plugin-example.html)
-
-
-
-
- 

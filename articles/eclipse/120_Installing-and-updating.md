@@ -6,8 +6,8 @@ part: Getting started
 
 # Installing and updating
 
-* Install Erlang __R20__ or later, if it isn't already present on your system. On Windows systems, use a path with no spaces in it.
-* Install Eclipse. We target version starting with __4.9+__.
+* Install a supported Erlang version like __Erlang/OTP 23__, if it isn't already present on your system. On Windows systems, use a path with no spaces in it.
+* Install Eclipse. __Java 8__ is required.
 * If your network uses a proxy to connect to the internet, fill in the appropriate data in `Window -> Preferences -> Install/Update -> Proxy settings`
 * Install Erlide by going to `Help -> Software Updates -> Find` and `Install... -> Search for new features to install`.
 * In the dialog, choose New remote site and enter `Erlide` as name and `https://erlide.org/update` as URL.
@@ -18,7 +18,4 @@ part: Getting started
 ## Update sites
 
 * Stable releases: [https://erlide.org/update](https://erlide.org/update)
-* Beta releases: [https://erlide.org/update/beta](https://erlide.org/update/beta)
-* Nightly releases (bleeding edge, may not work, use at your own risk): [https://erlide.org/update/nightly](https://erlide.org/update/nightly)
-
-**NOTE** that the update sites have a new domain. Older releases may be found at `download.erlide.org`, but that place won't be updated and will probably go away in the future.
+* Prerelease: [https://erlide.org/update/prerelease](https://erlide.org/update/prerelease)
