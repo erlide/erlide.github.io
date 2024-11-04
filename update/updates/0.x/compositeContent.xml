@@ -2,11 +2,12 @@
 <?compositeMetadataRepository version='1.0.0'?>
 <repository name='Erlide Composite Site 0.x' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1675238653580'/>
+    <property name='p2.timestamp' value='1730719416671'/>
     <property name='p2.atomic.composite.loading' value='false'/>
   </properties>
-  <children size='2'>
+  <children size='3'>
     <child location='0.60.x'/>
     <child location='0.61.x'/>
+    <child location='0.62.x'/>
   </children>
 </repository>
